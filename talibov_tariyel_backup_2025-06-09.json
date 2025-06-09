@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "id": 1749445372890,
+      "title": "Lakert şkalası haqda",
+      "type": "rpubs",
+      "status": "completed",
+      "addedDate": "2025-06-09",
+      "description": "Giriş\nBu yazı üç hissədən ibarətdir.\n\nI hissədə ölçü şkalaları, onların səviyyələri haqda zəruri məlumatlar verilir. Müxtəlif səviyyəli şkalaların xarakteristikaları haqda danışılır və nümunəlıər qətirilir. Birinci hissənin sonunda sosilal və hümanitar tədqiqatlarda geniş istifadə olunan və son dövrlərdə çox əhəmiyyət kəsb etməyə başlayan Lakert şkalasından söhbət açılır.\n\nHər üç hissədə şərhin anlaşılmasını asanlaşdırmaq məqsədilə eyni bir datadan istifadə olunur. Bu data 2009-cu ilin PİSA tədqiqatlarında şagirdlərin oxuduqları məktəbə olan münasibətlərini öyrənmək məqsədilə təklif olunan 4 mühakimədən ibarət sorğunun nəticələridir. Datanın bəzi aspektlərdən tədqiqi Tony Albanonun 2018-ci ildə çap olunan Introduction to Educational and Psychological Measurement Using R adlı kitabında vardır. Kitabı https://www.thetaminusb.com/intro-measurement-r/ mənbəsindən yükləmək olur. Data və onun tədqiq üçün lazım olan diğər funksiyalar müəllifin tərtib etdiyi epmr R paketində verilmişdir.\n\nII hissədə bu sorğunun (PİSA09) nəticələrinin təsviri statistik analizi aparılır. Bu zaman http://jason.bryer.org/likert linkindəki materialdan istifadə edilir.\n\nIII hissədə isə PİSA09-datasının müasir test nəzəriyyəsinin vasitələrilə analizinə baxılır. Burada isə bu sahədə geniş istifadə olunan mirt və eRm paketlərindən istifadə edilir.",
+      "url": "https://rpubs.com/Tariyel/1115401"
+    }
+  ],
+  "apps": [
+    {
+      "id": 1749445147406,
+      "title": "Lisey və qimnaziyalarda inspeksiya proqramı",
+      "url": "https://t01061954.shinyapps.io/inspeksiya_yekun/",
+      "type": "shinyapps",
+      "description": "Shinyapps.io tətbiqi",
+      "addedDate": "2025-06-09",
+      "status": "completed"
+    }
+  ],
+  "exportDate": "2025-06-09",
+  "exportTime": "09:10:35",
+  "version": "2.0",
+  "totalFiles": 1,
+  "totalApps": 1
+}

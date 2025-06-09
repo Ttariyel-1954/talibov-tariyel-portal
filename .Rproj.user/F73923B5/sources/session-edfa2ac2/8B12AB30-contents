@@ -1,0 +1,3340 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talıbov Tariyel İsmayıl oğlu - Riyaziyyat üzrə fəlsəfə doktoru</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #74b9ff 100%);
+            min-height: 100vh;
+        }
+
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .hero-section {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 25px;
+            padding: 50px;
+            margin-bottom: 40px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #1e3c72, #2a5298, #74b9ff);
+        }
+
+        .hero-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .profile-avatar {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #1e3c72, #74b9ff);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            color: white;
+            box-shadow: 0 15px 35px rgba(30, 60, 114, 0.3);
+            border: 8px solid rgba(255, 255, 255, 0.9);
+        }
+
+        .hero-title {
+            font-size: 3.2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1e3c72, #74b9ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4em;
+            color: #2980b9;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .hero-description {
+            font-size: 1.1em;
+            color: #5a6c7d;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            min-width: 120px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #1e3c72;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+
+        /* Navigation */
+        .navigation {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            transition: left 0.4s ease;
+            z-index: 0;
+        }
+
+        .nav-button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .nav-button:hover::before {
+            left: 0;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(30, 60, 114, 0.4);
+        }
+
+        .nav-button.active {
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(116, 185, 255, 0.4);
+        }
+
+        /* Content Sections */
+        .content-panel {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 25px;
+            padding: 50px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: none;
+            position: relative;
+        }
+
+        .content-panel.active {
+            display: block;
+            animation: slideInUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes slideInUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(30px) scale(0.95);
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .section-title {
+            font-size: 2.8em;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #1e3c72, #74b9ff);
+            border-radius: 2px;
+        }
+
+        /* Enhanced Upload Area */
+        .upload-zone {
+            border: 3px dashed #74b9ff;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9ff, #e8f4ff);
+            margin: 30px 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .upload-zone:hover {
+            border-color: #1e3c72;
+            background: linear-gradient(135deg, #e8f4ff, #d6ecff);
+            transform: translateY(-2px);
+        }
+
+        .upload-zone.drag-over {
+            border-color: #27ae60;
+            background: linear-gradient(135deg, #d5f4e6, #81ecec);
+            transform: scale(1.02);
+        }
+
+        .upload-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .upload-tab {
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .upload-tab.active {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(30, 60, 114, 0.3);
+        }
+
+        .upload-tab:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .upload-content {
+            display: none;
+        }
+
+        .upload-content.active {
+            display: block;
+        }
+
+        .upload-icon {
+            font-size: 4em;
+            color: #74b9ff;
+            margin-bottom: 20px;
+        }
+
+        .upload-title {
+            font-size: 1.4em;
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .upload-description {
+            color: #5a6c7d;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .action-button {
+            background: linear-gradient(135deg, #1e3c72, #74b9ff);
+            color: white;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(30, 60, 114, 0.3);
+            margin: 5px;
+        }
+
+        .action-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(30, 60, 114, 0.4);
+        }
+
+        .action-button.secondary {
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+        }
+
+        .action-button.success {
+            background: linear-gradient(135deg, #00b894, #00cec9);
+        }
+
+        .action-button.danger {
+            background: linear-gradient(135deg, #e17055, #e84393);
+        }
+
+        /* File Library Enhancements */
+        .file-library {
+            margin-top: 30px;
+        }
+
+        .file-filter {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            background: rgba(116, 185, 255, 0.1);
+            border: 2px solid #74b9ff;
+            color: #1e3c72;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: #74b9ff;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Card Layouts */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f4ff 100%);
+            border-radius: 20px;
+            padding: 35px;
+            border-left: 6px solid #1e3c72;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.1), rgba(116, 185, 255, 0.1));
+            border-radius: 50%;
+            transform: translate(30px, -30px);
+        }
+
+        .info-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(30, 60, 114, 0.15);
+        }
+
+        .info-card.rmd-file {
+            border-left-color: #e74c3c;
+            background: linear-gradient(135deg, #fdf2f2 0%, #fce4ec 100%);
+        }
+
+        .info-card.rpubs-file {
+            border-left-color: #f39c12;
+            background: linear-gradient(135deg, #fef9e7 0%, #fff8e1 100%);
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+
+        .card-period {
+            color: #74b9ff;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .card-description {
+            color: #5a6c7d;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card-actions .action-button {
+            padding: 8px 15px;
+            font-size: 14px;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        /* RPubs Integration */
+        .rpubs-info {
+            background: linear-gradient(135deg, #fff8e1, #ffecb3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #ff9800;
+        }
+
+        .rpubs-info h4 {
+            color: #e65100;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .rpubs-link {
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .rpubs-link:hover {
+            background: #f57c00;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
+        }
+
+        /* Progress Indicator */
+        .upload-progress {
+            margin-top: 20px;
+            display: none;
+        }
+
+        .progress-bar {
+            background: #ecf0f1;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .progress-text {
+            text-align: center;
+            color: #5a6c7d;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Feature Cards */
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(30, 60, 114, 0.3);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+            opacity: 0;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+            animation: shimmer 1.5s ease-in-out;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(30, 60, 114, 0.4);
+        }
+
+        .feature-icon {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .feature-description {
+            font-size: 0.95em;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(30, 60, 114, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 45px rgba(30, 60, 114, 0.4);
+        }
+
+        .contact-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .contact-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            font-size: 1.1em;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            background: rgba(30, 60, 114, 0.2);
+            border-radius: 20px;
+            margin-top: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        .footer-text {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 15px;
+            }
+
+            .hero-section, .content-panel {
+                padding: 30px 20px;
+            }
+
+            .hero-title {
+                font-size: 2.2em;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2em;
+            }
+
+            .section-title {
+                font-size: 2.2em;
+            }
+
+            .stats-row {
+                gap: 20px;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-button {
+                width: 100%;
+                padding: 18px;
+            }
+
+            .cards-grid, .feature-cards, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .upload-tabs {
+                flex-direction: column;
+            }
+
+            .upload-tab {
+                width: 100%;
+            }
+
+            .card-actions {
+                flex-direction: column;
+            }
+
+            .card-actions .action-button {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-avatar {
+                width: 140px;
+                height: 140px;
+                font-size: 60px;
+            }
+
+            .hero-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="profile-avatar">
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                        <div style="font-size: 50px;">🎓</div>
+                        <div style="font-size: 24px;">📚</div>
+                    </div>
+                </div>
+                <h1 class="hero-title">Talıbov Tariyel İsmayıl oğlu</h1>
+                <p class="hero-subtitle">Riyaziyyat üzrə fəlsəfə doktoru</p>
+                <p style="font-size: 1.2em; color: #e74c3c; margin-bottom: 8px; font-weight: 600;">
+                    Azərbaycan Respublikasının əməkdar müəllimi
+                </p>
+                <p style="font-size: 1.1em; color: #2980b9; margin-bottom: 15px; font-weight: 600;">
+                    Azərbaycan Təhsil İnstitutunun direktor müavini
+                </p>
+                <p class="hero-description">
+                    31 illik təhsil təcrübəsi | Testologiya və Riyaziyyat təhsili mütəxəssisi | 
+                    R Proqramlaşdırma və Shiny Tətbiqləri ilə Test Analizi
+                </p>
+                
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-number">31</span>
+                        <span class="stat-label">İl Təcrübə</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">İl Testologiya</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2025</span>
+                        <span class="stat-label">Cari İl</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-menu">
+                <button class="nav-button" onclick="showContent('home')">
+                    <span>🏠 Ana Səhifə</span>
+                </button>
+                <button class="nav-button" onclick="showContent('experience')">
+                    <span>💼 Peşəkar Yol</span>
+                </button>
+                <button class="nav-button" onclick="showContent('tests')">
+                    <span>📊 Test Materialları</span>
+                </button>
+                <button class="nav-button active" onclick="showContent('research')">
+                    <span>🔬 Elmi Yazılar</span>
+                </button>
+                <button class="nav-button" onclick="showContent('applications')">
+                    <span>💻 R Tətbiqləri</span>
+                </button>
+                <button class="nav-button" onclick="showContent('contact')">
+                    <span>📧 Əlaqə</span>
+                </button>
+            </div>
+            
+            <!-- Data Management Section -->
+            <div style="margin-top: 20px; text-align: center; padding: 15px; background: rgba(255,255,255,0.9); border-radius: 15px;">
+                <h4 style="color: #1e3c72; margin-bottom: 10px;">📁 Məlumat İdarəetməsi</h4>
+                <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                    <button class="action-button success" onclick="saveDataToFile()" title="Bütün məlumatları JSON faylı kimi yadda saxla">
+                        💾 Backup Yarat
+                    </button>
+                    <button class="action-button secondary" onclick="document.getElementById('dataFileInput').click()" title="Əvvəllər yadda saxlanmış məlumatları geri yüklə">
+                        📁 Backup Yüklə
+                    </button>
+                    <button class="action-button" onclick="clearAllData()" title="Bütün məlumatları təmizlə">
+                        🗑️ Təmizlə
+                    </button>
+                </div>
+                <input type="file" id="dataFileInput" accept=".json" style="display: none;" onchange="loadDataFromFile(event)">
+                <p style="font-size: 0.85em; color: #6c757d; margin-top: 8px; line-height: 1.4;">
+                    ⚠️ <strong>Diqqət:</strong> GitHub-a yükləyəndə backup yaradın ki, məlumatlarınız itməsin!
+                </p>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="content-panel">
+            <h2 class="section-title">Xoş Gəlmisiniz</h2>
+            <p style="font-size: 1.2em; text-align: center; color: #5a6c7d; margin-bottom: 40px; line-height: 1.8;">
+                Azərbaycan Respublikasının əməkdar müəllimi, Riyaziyyat üzrə fəlsəfə doktoru, 31 illik təhsil təcrübəsi olan, 
+                testologiya elmi sahəsində dərin tədqiqatlar aparmış və R proqramlaşdırma dili ilə innovativ həllər yaradan 
+                bir mütəxəssis olaraq sizinlə biliklərimizi bölüşməkdən məmnunam.
+            </p>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <span class="feature-icon">📈</span>
+                    <h3 class="feature-title">Testologiya Elmi</h3>
+                    <p class="feature-description">15 il boyunca test nəzəriyyəsi və praktikası üzərində dərin araşdırmalar</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💻</span>
+                    <h3 class="feature-title">R Proqramlaşdırma</h3>
+                    <p class="feature-description">Shiny və digər R paketləri ilə interaktiv analiz vasitələri</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📚</span>
+                    <h3 class="feature-title">Kurrikulum İnkişafı</h3>
+                    <p class="feature-description">Riyaziyyat təhsili standartları və kurrikulumlarının hazırlanması</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h3 class="feature-title">Təhsil İdarəetməsi</h3>
+                    <p class="feature-description">31 il direktor və direktor müavini kimi təhsil idarəetməsi</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="content-panel">
+            <h2 class="section-title">Peşəkar Karyera</h2>
+            
+            <div class="cards-grid">
+                <div class="info-card">
+                    <h3 class="card-title">Direktor Müavini</h3>
+                    <p class="card-period">2024 - Hal-hazırda</p>
+                    <p class="card-description">
+                        <strong>Azərbaycan Təhsil İnstitutu</strong><br>
+                        Riyaziyyat üzrə fəlsəfə doktoru, Azərbaycan Respublikasının əməkdar müəllimi olaraq təhsil 
+                        siyasətinin formalaşdırılması, elmi tədqiqatların koordinasiyası və innovativ təhsil metodlarının tətbiqi.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="card-title">Lisey Direktoru</h3>
+                    <p class="card-period">1993 - 2024 (31 il)</p>
+                    <p class="card-description">
+                        <strong>Respublika Fizika-Riyaziyyat və İnformatika Təmayüllü Lisey</strong><br>
+                        Üç onillik boyunca liseyin inkişafına rəhbərlik, yüzlərlə tələbənin universitetlərə hazırlanması 
+                        və müəllim kadrlarının peşəkar inkişafı.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="card-title">Milli Məsləhətçi</h3>
+                    <p class="card-period">Təhsil İslahatı Dövründə</p>
+                    <p class="card-description">
+                        <strong>Azərbaycan Təhsil Nazirliyi</strong><br>
+                        İbtidai və orta məktəblər üçün riyaziyyat fənni üzrə milli standartların və 
+                        kurrikulumların hazırlanmasında aparıcı rolu.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="card-title">Testologiya Tədqiqatçısı</h3>
+                    <p class="card-period">2009 - Hal-hazırda (15 il)</p>
+                    <p class="card-description">
+                        <strong>Müstəqil Elmi Araşdırmalar</strong><br>
+                        Test nəzəriyyəsi, psixometriya və R proqram dili ilə statistik analiz metodlarının 
+                        təhsil sahəsinə tətbiqi üzərində fundamental tədqiqatlar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tests Section -->
+        <section id="tests" class="content-panel">
+            <h2 class="section-title">Test Materialları və Sınaq Vasitələri</h2>
+            
+            <div class="upload-zone">
+                <div class="upload-icon">📤</div>
+                <h3 class="upload-title">Test Yükləmə Mərkəzi</h3>
+                <p class="upload-description">Testlərinizi, sual bankınızı və analiz materiallarınızı buraya əlavə edin</p>
+                <button class="action-button" onclick="handleTestUpload()">Material Əlavə Et</button>
+            </div>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <span class="feature-icon">🔢</span>
+                    <h3 class="feature-title">Riyaziyyat Test Bankı</h3>
+                    <p class="feature-description">İbtidai və orta məktəb səviyyəsi üçün hərtərəfli test kolleksiyası</p>
+                    <button class="action-button" style="margin-top: 20px;" onclick="viewTestBank('math')">İndi Bax</button>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🧮</span>
+                    <h3 class="feature-title">Testologiya Metodları</h3>
+                    <p class="feature-description">Test hazırlama, validasiya və güvenilirlik analizi üsulları</p>
+                    <button class="action-button" style="margin-top: 20px;" onclick="viewTestBank('methodology')">İndi Bax</button>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3 class="feature-title">Statistik Analiz</h3>
+                    <p class="feature-description">R proqramı ilə hazırlanmış test analizi və hesabat vasitələri</p>
+                    <button class="action-button" style="margin-top: 20px;" onclick="viewTestBank('statistics')">İndi Bax</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="content-panel active">
+            <h2 class="section-title">Elmi Araşdırmalar və Nəzəri Yazılar</h2>
+            
+            <!-- Enhanced Upload Zone -->
+            <div class="upload-zone" id="researchUploadZone">
+                <div class="upload-tabs">
+                    <button class="upload-tab active" onclick="switchUploadTab('files')">📁 Fayl Yükləmə</button>
+                    <button class="upload-tab" onclick="switchUploadTab('repos')">🔗 Digər Repo</button>
+                    <button class="upload-tab" onclick="switchUploadTab('rpubs')">🌐 RPubs Linki</button>
+                    <button class="upload-tab" onclick="switchUploadTab('github')">💻 GitHub Repo</button>
+                    <button class="upload-tab" onclick="switchUploadTab('cloud')">☁️ Cloud Hosting</button>
+                    <button class="upload-tab" onclick="switchUploadTab('manual')">✍️ Manual Giriş</button>
+                </div>
+
+                <!-- File Upload Tab -->
+                <div id="files-upload" class="upload-content active">
+                    <div class="upload-icon">📄</div>
+                    <h3 class="upload-title">R Markdown və Digər Fayllar</h3>
+                    <p class="upload-description">
+                        .Rmd, .pdf, .doc, .html, .R, .zip və digər formatdakı fayllarınızı sürükləyin və ya seçin.<br>
+                        Dəstəklənən formatlar: Rmd, R, PDF, Word, HTML, TXT, MD, ZIP
+                    </p>
+                    <input type="file" id="fileInput" multiple accept=".rmd,.r,.pdf,.doc,.docx,.html,.txt,.md,.zip,.csv,.xlsx" style="display: none;" onchange="handleFileUpload(event)">
+                    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                        <button class="action-button" onclick="document.getElementById('fileInput').click()">📂 Faylları Seç</button>
+                        <button class="action-button secondary" onclick="createNewRmd()">📝 Yeni .Rmd Yarat</button>
+                    </div>
+                </div>
+
+                <!-- Other Repositories Tab -->
+                <div id="repos-upload" class="upload-content">
+                    <div class="upload-icon">🔗</div>
+                    <h3 class="upload-title">Digər Repository Platformaları</h3>
+                    <p class="upload-description">
+                        GitLab, Bitbucket, Codeberg və digər git platformalarında yerləşən elmi materiallarınızı əlavə edin.<br>
+                        Dəstəklənən: R Markdown, R Scripts, Data Analysis, Research Papers
+                    </p>
+                    <div style="margin: 20px 0;">
+                        <select id="researchRepoPlatform" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                            <option value="gitlab">🦊 GitLab</option>
+                            <option value="bitbucket">📘 Bitbucket</option>
+                            <option value="codeberg">🌿 Codeberg</option>
+                            <option value="sourceforge">🔧 SourceForge</option>
+                            <option value="other">🔗 Digər Repository</option>
+                        </select>
+                        <br>
+                        <input type="url" id="researchRepoUrl" placeholder="https://gitlab.com/username/research-project" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="researchRepoTitle" placeholder="Tədqiqat/Material başlığı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <select id="researchRepoType" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                            <option value="rmarkdown">📋 R Markdown Analiz</option>
+                            <option value="research">🔬 Elmi Tədqiqat</option>
+                            <option value="script">📄 R Script</option>
+                            <option value="dataset">📊 Məlumat Toplusu</option>
+                            <option value="paper">📝 Elmi Məqalə</option>
+                            <option value="book">📚 Kitab/Əlyazma</option>
+                        </select>
+                        <br>
+                        <textarea id="researchRepoDescription" placeholder="Elmi materialın təsviri və məzmunu" rows="3" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    <button class="action-button danger" onclick="addResearchRepositoryEntry()">🔗 Repository Əlavə Et</button>
+                </div>
+
+                <!-- RPubs Link Tab -->
+                <div id="rpubs-upload" class="upload-content">
+                    <div class="upload-icon">🌐</div>
+                    <h3 class="upload-title">RPubs Publikasiyası Əlavə Et</h3>
+                    <p class="upload-description">
+                        RPubs.com-da dərc edilmiş R Markdown əsərlərinizin linkini əlavə edin.<br>
+                        Məsələn: https://rpubs.com/username/document-title
+                    </p>
+                    <div style="margin: 20px 0;">
+                        <input type="url" id="rpubsUrl" placeholder="https://rpubs.com/..." style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #74b9ff; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="rpubsTitle" placeholder="Əsərin başlığı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #74b9ff; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <textarea id="rpubsDescription" placeholder="Qısa təsvir (istəksiz)" rows="3" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #74b9ff; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    <button class="action-button success" onclick="addRPubsLink()">🌐 RPubs Linki Əlavə Et</button>
+                </div>
+
+                <!-- GitHub Repository Tab -->
+                <div id="github-upload" class="upload-content">
+                    <div class="upload-icon">💻</div>
+                    <h3 class="upload-title">GitHub Repository Əlavə Et</h3>
+                    <p class="upload-description">
+                        R layihələrinizin, R Markdown fayllarınızın və ya digər elmi materialların GitHub repository linkini əlavə edin.
+                    </p>
+                    <div style="margin: 20px 0;">
+                        <input type="url" id="githubUrl" placeholder="https://github.com/username/repository" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="githubTitle" placeholder="Repository başlığı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <textarea id="githubDescription" placeholder="Layihə təsviri" rows="3" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    <button class="action-button secondary" onclick="addGitHubRepo()">💻 GitHub Repo Əlavə Et</button>
+                </div>
+
+                <!-- Cloud Hosting Tab -->
+                <div id="cloud-upload" class="upload-content">
+                    <div class="upload-icon">☁️</div>
+                    <h3 class="upload-title">Cloud Hosting Materialları</h3>
+                    <p class="upload-description">
+                        DigitalOcean, Shinyapps.io, AWS, Google Cloud və digər bulud platformalarında yerləşən elmi materiallarınızı əlavə edin.<br>
+                        Dəstəklənən: R Shiny Apps, Dashboards, Online Analizlər, Hosted Documents
+                    </p>
+                    <div style="margin: 20px 0;">
+                        <select id="researchCloudPlatform" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #00b894; font-size: 16px; margin-bottom: 10px;">
+                            <option value="shinyapps">🌐 Shinyapps.io</option>
+                            <option value="digitalocean">🌊 DigitalOcean</option>
+                            <option value="aws">☁️ Amazon AWS</option>
+                            <option value="gcp">🌐 Google Cloud</option>
+                            <option value="azure">💙 Microsoft Azure</option>
+                            <option value="heroku">🚀 Heroku</option>
+                            <option value="vercel">▲ Vercel</option>
+                            <option value="netlify">🔷 Netlify</option>
+                            <option value="other">☁️ Digər Cloud</option>
+                        </select>
+                        <br>
+                        <input type="url" id="researchCloudUrl" placeholder="https://username.shinyapps.io/analysis/" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #00b894; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="researchCloudTitle" placeholder="Material/Analiz başlığı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #00b894; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <select id="researchCloudType" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #00b894; font-size: 16px; margin-bottom: 10px;">
+                            <option value="shiny">📊 R Shiny Analiz</option>
+                            <option value="dashboard">📈 İnteraktiv Dashboard</option>
+                            <option value="webapp">🌐 Web Tətbiqi</option>
+                            <option value="document">📄 Online Sənəd</option>
+                            <option value="api">🔌 Data API</option>
+                            <option value="other">🔧 Digər</option>
+                        </select>
+                        <br>
+                        <textarea id="researchCloudDescription" placeholder="Online materialın təsviri və necə istifadə ediləcəyi" rows="3" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #00b894; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    <button class="action-button" style="background: linear-gradient(135deg, #00b894, #00cec9);" onclick="addResearchCloudEntry()">☁️ Cloud Material Əlavə Et</button>
+                </div>
+
+                <!-- Manual Entry Tab -->
+                <div id="manual-upload" class="upload-content">
+                    <div class="upload-icon">✍️</div>
+                    <h3 class="upload-title">Manual Məqalə/Kitab Girişi</h3>
+                    <p class="upload-description">
+                        Xarici linklər, nəşr edilmiş kitablar, məqalələr və digər elmi əsərlər üçün manual məlumat girişi.<br>
+                        İstənilən elmi material və ya xarici mənbə üçün istifadə edin.
+                    </p>
+                    <div style="margin: 20px 0;">
+                        <input type="text" id="manualTitle" placeholder="Əsərin başlığı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="manualAuthors" placeholder="Müəlliflər" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="manualYear" placeholder="Nəşr ili" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="url" id="manualLink" placeholder="Link (istəksiz - məs: journal, kitab və s.)" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <textarea id="manualDescription" placeholder="Əsərin təsviri və elmi əhəmiyyəti" rows="4" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    <button class="action-button danger" onclick="addManualEntry()">✍️ Manual Giriş Əlavə Et</button>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="upload-progress" id="uploadProgress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">Yüklənir...</div>
+                </div>
+            </div>
+
+            <!-- File Filter -->
+            <div class="file-library">
+                <div class="file-filter">
+                    <button class="filter-btn active" onclick="filterFiles('all')">🔍 Hamısı</button>
+                    <button class="filter-btn" onclick="filterFiles('rmd')">📊 R Markdown</button>
+                    <button class="filter-btn" onclick="filterFiles('repos')">🔗 Digər Repo</button>
+                    <button class="filter-btn" onclick="filterFiles('rpubs')">🌐 RPubs</button>
+                    <button class="filter-btn" onclick="filterFiles('github')">💻 GitHub</button>
+                    <button class="filter-btn" onclick="filterFiles('cloud')">☁️ Cloud</button>
+                    <button class="filter-btn" onclick="filterFiles('pdf')">📄 PDF</button>
+                    <button class="filter-btn" onclick="filterFiles('manual')">✍️ Manual</button>
+                </div>
+
+                <div id="uploadedFiles"></div>
+            </div>
+
+            <div class="cards-grid">
+                <div class="info-card">
+                    <h3 class="card-title">Testologiya Elmi: Müasir Perspektivlər</h3>
+                    <p class="card-period">2024</p>
+                    <p class="card-description">
+                        15 illik tədqiqat təcrübəsi əsasında testologiya elminin müasir vəziyyəti, 
+                        problemləri və inkişaf istiqamətləri haqqında fundamental araşdırma.
+                    </p>
+                    <div class="card-actions">
+                        <button class="action-button" onclick="openResearch('testology')">📖 Tam Mətn</button>
+                        <button class="action-button secondary" onclick="downloadResearch('testology')">⬇️ Yüklə</button>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="card-title">Azərbaycan Təhsilində Riyaziyyat Standartları</h3>
+                    <p class="card-period">2023</p>
+                    <p class="card-description">
+                        Milli kurrikulumun formalaşması prosesində əldə edilən təcrübə və 
+                        beynəlxalq standartlarla müqayisəli analiz.
+                    </p>
+                    <div class="card-actions">
+                        <button class="action-button" onclick="openResearch('standards')">📖 Tam Mətn</button>
+                        <button class="action-button secondary" onclick="downloadResearch('standards')">⬇️ Yüklə</button>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="card-title">R Dili ilə Təhsil Analitikası</h3>
+                    <p class="card-period">2022</p>
+                    <p class="card-description">
+                        Shiny və digər R paketlərinin təhsil sektorunda tətbiqi, 
+                        praktiki nümunələr və metodoloji tövsiyələr.
+                    </p>
+                    <div class="card-actions">
+                        <button class="action-button" onclick="openResearch('r-analytics')">📖 Tam Mətn</button>
+                        <button class="action-button secondary" onclick="downloadResearch('r-analytics')">⬇️ Yüklə</button>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="card-title">Psixometriya və Test Validasiyası</h3>
+                    <p class="card-period">2021</p>
+                    <p class="card-description">
+                        Test alətlərinin elmi cəhətdən düzgün qurulması, 
+                        güvenilirlik və etibarlılıq göstəricilərinin hesablanması.
+                    </p>
+                    <div class="card-actions">
+                        <button class="action-button" onclick="openResearch('psychometry')">📖 Tam Mətn</button>
+                        <button class="action-button secondary" onclick="downloadResearch('psychometry')">⬇️ Yüklə</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section id="applications" class="content-panel">
+            <h2 class="section-title">R və Shiny Tətbiqləri</h2>
+            
+            <!-- Enhanced App Upload Zone -->
+            <div class="upload-zone" id="appUploadZone">
+                <div class="upload-tabs">
+                    <button class="upload-tab active" onclick="switchAppTab('github')">💻 GitHub</button>
+                    <button class="upload-tab" onclick="switchAppTab('repos')">🔗 Digər Repo</button>
+                    <button class="upload-tab" onclick="switchAppTab('shinyapps')">🌐 Shinyapps.io</button>
+                    <button class="upload-tab" onclick="switchAppTab('cloud')">☁️ Cloud Hosting</button>
+                    <button class="upload-tab" onclick="switchAppTab('zip')">📦 ZIP Yükləmə</button>
+                    <button class="upload-tab" onclick="switchAppTab('manual')">✍️ Digər</button>
+                </div>
+
+                <!-- GitHub App Tab -->
+                <div id="github-app" class="upload-content active">
+                    <div class="upload-icon">💻</div>
+                    <h3 class="upload-title">GitHub Repository</h3>
+                    <p class="upload-description">
+                        GitHub-da yerləşən R Shiny, R Markdown və digər R layihələrinizi əlavə edin.<br>
+                        Dəstəklənən: Shiny apps, R packages, R scripts, RMarkdown dashboards
+                    </p>
+                    <div style="margin: 20px 0;">
+                        <input type="url" id="appGithubUrl" placeholder="https://github.com/username/shiny-app" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="appGithubTitle" placeholder="Tətbiq adı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <select id="appGithubType" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; margin-bottom: 10px;">
+                            <option value="shiny">📊 Shiny Application</option>
+                            <option value="rmarkdown">📋 R Markdown App</option>
+                            <option value="package">📦 R Package</option>
+                            <option value="script">📄 R Script</option>
+                            <option value="dashboard">📈 Dashboard</option>
+                        </select>
+                        <br>
+                        <textarea id="appGithubDescription" placeholder="Tətbiq təsviri və xüsusiyyətləri" rows="3" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    <button class="action-button secondary" onclick="addGitHubApp()">💻 GitHub Əlavə Et</button>
+                </div>
+
+                <!-- Other Repositories Tab -->
+                <div id="repos-app" class="upload-content">
+                    <div class="upload-icon">🔗</div>
+                    <h3 class="upload-title">Digər Repository Platformaları</h3>
+                    <p class="upload-description">
+                        GitLab, Bitbucket, Codeberg və digər git platformalarında yerləşən layihələrinizi əlavə edin.<br>
+                        Dəstəklənən: GitLab, Bitbucket, Codeberg, SourceForge və s.
+                    </p>
+                    <div style="margin: 20px 0;">
+                        <select id="repoPlatform" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                            <option value="gitlab">🦊 GitLab</option>
+                            <option value="bitbucket">📘 Bitbucket</option>
+                            <option value="codeberg">🌿 Codeberg</option>
+                            <option value="sourceforge">🔧 SourceForge</option>
+                            <option value="other">🔗 Digər</option>
+                        </select>
+                        <br>
+                        <input type="url" id="repoUrl" placeholder="https://gitlab.com/username/project" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="repoTitle" placeholder="Layihə adı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <select id="repoType" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                            <option value="shiny">📊 Shiny Application</option>
+                            <option value="rmarkdown">📋 R Markdown App</option>
+                            <option value="package">📦 R Package</option>
+                            <option value="script">📄 R Script</option>
+                            <option value="dashboard">📈 Dashboard</option>
+                            <option value="analysis">🔍 Data Analysis</option>
+                        </select>
+                        <br>
+                        <textarea id="repoDescription" placeholder="Layihə təsviri və texniki detallar" rows="3" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    <button class="action-button danger" onclick="addRepositoryApp()">🔗 Repository Əlavə Et</button>
+                </div>
+
+                <!-- Shinyapps.io Tab -->
+                <div id="shinyapps-app" class="upload-content">
+                    <div class="upload-icon">🌐</div>
+                    <h3 class="upload-title">Shinyapps.io Tətbiqi</h3>
+                    <p class="upload-description">
+                        Shinyapps.io platformasında dərc edilmiş tətbiqlərinizi əlavə edin.<br>
+                        Məsələn: https://username.shinyapps.io/app-name/
+                    </p>
+                    <div style="margin: 20px 0;">
+                        <input type="url" id="shinyappsUrl" placeholder="https://username.shinyapps.io/app-name/" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #74b9ff; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="shinyappsTitle" placeholder="Tətbiq başlığı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #74b9ff; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <select id="shinyappsCategory" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #74b9ff; font-size: 16px; margin-bottom: 10px;">
+                            <option value="dashboard">📊 Test Analizi Dashboard</option>
+                            <option value="calculator">🧮 Hesablama Aləti</option>
+                            <option value="visualization">📈 Data Vizuallaşdırma</option>
+                            <option value="simulator">🎲 Simulyasiya Aləti</option>
+                            <option value="educational">🎓 Təhsil Aləti</option>
+                            <option value="other">🔧 Digər</option>
+                        </select>
+                        <br>
+                        <textarea id="shinyappsDescription" placeholder="Tətbiqin funksiyaları və istifadə sahəsi" rows="3" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #74b9ff; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    <button class="action-button success" onclick="addShinyappsApp()">🌐 Shinyapps.io Əlavə Et</button>
+                </div>
+
+                <!-- Cloud Hosting Tab -->
+                <div id="cloud-app" class="upload-content">
+                    <div class="upload-icon">☁️</div>
+                    <h3 class="upload-title">Cloud Hosting Platformaları</h3>
+                    <p class="upload-description">
+                        DigitalOcean, AWS, Google Cloud, Azure və digər bulud platformalarında yerləşən tətbiqlərinizi əlavə edin.<br>
+                        Dəstəklənən: Canlı tətbiqlər, API-lər, Web Servislər
+                    </p>
+                    <div style="margin: 20px 0;">
+                        <select id="cloudPlatform" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #00b894; font-size: 16px; margin-bottom: 10px;">
+                            <option value="digitalocean">🌊 DigitalOcean</option>
+                            <option value="aws">☁️ Amazon AWS</option>
+                            <option value="gcp">🌐 Google Cloud</option>
+                            <option value="azure">💙 Microsoft Azure</option>
+                            <option value="heroku">🚀 Heroku</option>
+                            <option value="vercel">▲ Vercel</option>
+                            <option value="netlify">🔷 Netlify</option>
+                            <option value="other">☁️ Digər</option>
+                        </select>
+                        <br>
+                        <input type="url" id="cloudUrl" placeholder="https://your-app.digitalocean.app" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #00b894; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="cloudTitle" placeholder="Tətbiq adı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #00b894; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <select id="cloudAppType" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #00b894; font-size: 16px; margin-bottom: 10px;">
+                            <option value="shiny">📊 Shiny Web App</option>
+                            <option value="api">🔌 REST API</option>
+                            <option value="dashboard">📈 Dashboard</option>
+                            <option value="webapp">🌐 Web Application</option>
+                            <option value="microservice">⚙️ Microservice</option>
+                            <option value="other">🔧 Digər</option>
+                        </select>
+                        <br>
+                        <textarea id="cloudDescription" placeholder="Tətbiq haqqında, texniki detallar və istifadə təlimatı" rows="3" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #00b894; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    <button class="action-button" style="background: linear-gradient(135deg, #00b894, #00cec9);" onclick="addCloudApp()">☁️ Cloud Tətbiqi Əlavə Et</button>
+                </div>
+
+                <!-- ZIP Upload Tab -->
+                <div id="zip-app" class="upload-content">
+                    <div class="upload-icon">📦</div>
+                    <h3 class="upload-title">ZIP Fayl Yükləmə</h3>
+                    <p class="upload-description">
+                        Tətbiqinizin bütün fayllarını ZIP formatında yükləyin.<br>
+                        Daxil olmalı: ui.R, server.R, .Rmd, məlumat faylları və s.
+                    </p>
+                    <input type="file" id="zipAppInput" accept=".zip,.rar,.7z" style="display: none;" onchange="handleZipAppUpload(event)">
+                    <div style="margin: 20px 0;">
+                        <input type="text" id="zipAppTitle" placeholder="Tətbiq başlığı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <textarea id="zipAppDescription" placeholder="ZIP faylının məzmunu haqqında qeydlər" rows="2" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #e17055; font-size: 16px; resize: vertical; margin-bottom: 15px;"></textarea>
+                    </div>
+                    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                        <button class="action-button danger" onclick="document.getElementById('zipAppInput').click()">📦 ZIP Fayl Seç</button>
+                        <button class="action-button secondary" onclick="createShinyTemplate()">📝 Shiny Şablon Yarat</button>
+                    </div>
+                </div>
+
+                <!-- Manual Link Tab -->
+                <div id="manual-app" class="upload-content">
+                    <div class="upload-icon">✍️</div>
+                    <h3 class="upload-title">Digər Platform və Xidmətlər</h3>
+                    <p class="upload-description">
+                        Yuxarıda olmayan digər platformalar, şəxsi serverlər və ya xüsusi hostinq xidmətləri üçün istifadə edin.
+                    </p>
+                    <div style="margin: 20px 0;">
+                        <input type="url" id="manualAppUrl" placeholder="https://your-custom-domain.com" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="manualAppTitle" placeholder="Tətbiq adı" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <input type="text" id="manualAppPlatform" placeholder="Platform/Xidmət adı (məs: Şəxsi Server, Firebase və s.)" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; margin-bottom: 10px;">
+                        <br>
+                        <textarea id="manualAppDescription" placeholder="Tətbiq haqqında ətraflı məlumat və texniki detallar" rows="3" style="width: 100%; max-width: 500px; padding: 12px; border-radius: 10px; border: 2px solid #6c5ce7; font-size: 16px; resize: vertical;"></textarea>
+                    </div>
+                    <button class="action-button secondary" onclick="addManualApp()">✍️ Digər Platform Əlavə Et</button>
+                </div>
+            </div>
+
+            <!-- App Library -->
+            <div class="file-library">
+                <h3 style="text-align: center; color: #1e3c72; margin: 30px 0 20px 0;">📱 Tətbiq Kitabxanası</h3>
+                <div class="file-filter">
+                    <button class="filter-btn active" onclick="filterApps('all')">🔍 Hamısı</button>
+                    <button class="filter-btn" onclick="filterApps('github')">💻 GitHub</button>
+                    <button class="filter-btn" onclick="filterApps('repos')">🔗 Digər Repo</button>
+                    <button class="filter-btn" onclick="filterApps('shinyapps')">🌐 Shinyapps.io</button>
+                    <button class="filter-btn" onclick="filterApps('cloud')">☁️ Cloud</button>
+                    <button class="filter-btn" onclick="filterApps('zip')">📦 ZIP</button>
+                    <button class="filter-btn" onclick="filterApps('manual')">✍️ Digər</button>
+                </div>
+                <div id="uploadedApps"></div>
+            </div>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3 class="feature-title">Test Analizi Dashboard</h3>
+                    <p class="feature-description">Real vaxtda test nəticələrinin təhlili, qrafik vizuallaşdırma və hesabat yaradılması</p>
+                    <button class="action-button" style="margin-top: 20px;" onclick="launchApp('dashboard')">Tətbiqi Aç</button>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📈</span>
+                    <h3 class="feature-title">Tələbə Performans Monitoru</h3>
+                    <p class="feature-description">Fərdi və qrup performansının dinamik izlənməsi, trend analizi</p>
+                    <button class="action-button" style="margin-top: 20px;" onclick="launchApp('performance')">Tətbiqi Aç</button>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h3 class="feature-title">Sual Bankı İdarəetməsi</h3>
+                    <p class="feature-description">Test suallarının kateqoriyalaşdırılması, çətinlik dərəcəsi analizi</p>
+                    <button class="action-button" style="margin-top: 20px;" onclick="launchApp('questionbank')">Tətbiqi Aç</button>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📋</span>
+                    <h3 class="feature-title">Avtomatik Hesabat Sistemi</h3>
+                    <p class="feature-description">R Markdown ilə detallı akademik hesabatların avtomatik yaradılması</p>
+                    <button class="action-button" style="margin-top: 20px;" onclick="launchApp('reports')">Tətbiqi Aç</button>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🔍</span>
+                    <h3 class="feature-title">Psixometrik Analiz</h3>
+                    <p class="feature-description">IRT, CTT və digər psixometrik modellər üçün hərtərəfli analiz vasitəsi</p>
+                    <button class="action-button" style="margin-top: 20px;" onclick="launchApp('psychometric')">Tətbiqi Aç</button>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🌐</span>
+                    <h3 class="feature-title">İnteraktiv Öyrədici Modullər</h3>
+                    <p class="feature-description">Riyaziyyat mövzuları üzrə interaktiv təhsil materialları</p>
+                    <button class="action-button" style="margin-top: 20px;" onclick="launchApp('interactive')">Tətbiqi Aç</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-panel">
+            <h2 class="section-title">Əlaqə və Əməkdaşlıq</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <span class="contact-icon">✉️</span>
+                    <h3 class="contact-title">Elektron Poçt</h3>
+                    <div class="contact-info">
+                        <p>talibov.tariyel@edu.az</p>
+                        <p>Elmi əməkdaşlıq və layihə təklifləri üçün</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon">🏢</span>
+                    <h3 class="contact-title">İş Yeri</h3>
+                    <div class="contact-info">
+                        <p>Azərbaycan Təhsil İnstitutu</p>
+                        <p>Direktor Müavini</p>
+                        <p>Bakı, Azərbaycan</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon">🔬</span>
+                    <h3 class="contact-title">Tədqiqat Sahələri</h3>
+                    <div class="contact-info">
+                        <p>Testologiya və Psixometriya</p>
+                        <p>R Proqramlaşdırma</p>
+                        <p>Riyaziyyat Təhsili</p>
+                        <p>Kurrikulum İnkişafı</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon">🤝</span>
+                    <h3 class="contact-title">Əməkdaşlıq İmkanları</h3>
+                    <div class="contact-info">
+                        <p>Elmi layihələr</p>
+                        <p>Təhsil məsləhətləri</p>
+                        <p>Seminar və təlimlər</p>
+                        <p>Beynəlxalq tədqiqatlar</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; text-align: center; padding: 30px; background: linear-gradient(135deg, #f8f9ff, #e8f4ff); border-radius: 20px;">
+                <h3 style="color: #1e3c72; margin-bottom: 15px; font-size: 1.5em;">Birgə Layihələr Dəvəti</h3>
+                <p style="color: #5a6c7d; font-size: 1.1em; line-height: 1.7;">
+                    Testologiya, riyaziyyat təhsili və R proqramlaşdırma sahələrində birgə tədqiqat və layihələr 
+                    üçün həmişə açığam. Birlikdə Azərbaycan təhsilinin keyfiyyətini artırmağa töhfə verək.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">&copy; 2025 | Talıbov Tariyel İsmayıl oğlu - Riyaziyyat üzrə fəlsəfə doktoru</p>
+            <p class="footer-text">Azərbaycan Respublikasının əməkdar müəllimi | Azərbaycan Təhsil İnstitutunun direktor müavini</p>
+        </footer>
+    </div>
+
+    <script>
+        // Global variables
+        let uploadedFiles = [];
+        let uploadedApps = [];
+        let currentFilter = 'all';
+        let currentAppFilter = 'all';
+        let currentUploadTab = 'files';
+        let currentAppTab = 'github';
+
+        // Data persistence functions
+        function saveDataToFile() {
+            const data = {
+                files: uploadedFiles.map(file => ({
+                    id: file.id,
+                    title: file.title,
+                    name: file.name,
+                    size: file.size,
+                    type: file.type,
+                    lastModified: file.lastModified,
+                    status: file.status,
+                    addedDate: file.addedDate,
+                    description: file.description,
+                    url: file.url,
+                    authors: file.authors,
+                    year: file.year,
+                    platform: file.platform,
+                    materialType: file.materialType
+                })),
+                apps: uploadedApps.map(app => ({
+                    id: app.id,
+                    title: app.title,
+                    url: app.url,
+                    platform: app.platform,
+                    type: app.type,
+                    appType: app.appType,
+                    description: app.description,
+                    addedDate: app.addedDate,
+                    status: app.status,
+                    fileName: app.fileName,
+                    fileSize: app.fileSize
+                })),
+                exportDate: new Date().toLocaleDateString('az-AZ'),
+                version: '1.0'
+            };
+
+            const jsonString = JSON.stringify(data, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `elmi_yazilarin_backup_${new Date().toISOString().slice(0,10)}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            showNotification('Məlumatlar İxrac Edildi', 'Bütün məlumatlarınız JSON faylı kimi yadda saxlanıldı!', 'success');
+        }
+
+        function loadDataFromFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            if (!file.name.endsWith('.json')) {
+                showNotification('Xəta', 'Zəhmət olmasa JSON fayl seçin!', 'error');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    
+                    if (data.files && Array.isArray(data.files)) {
+                        uploadedFiles = data.files;
+                    }
+                    
+                    if (data.apps && Array.isArray(data.apps)) {
+                        uploadedApps = data.apps;
+                    }
+                    
+                    // Refresh displays
+                    filterFiles(currentFilter);
+                    filterApps(currentAppFilter);
+                    
+                    showNotification('Məlumatlar Yükləndi', 
+                        `${data.files ? data.files.length : 0} fayl və ${data.apps ? data.apps.length : 0} tətbiq uğurla bərpa edildi!`, 
+                        'success');
+                    
+                } catch (error) {
+                    console.error('JSON parse error:', error);
+                    showNotification('Xəta', 'Fayl formatı düzgün deyil!', 'error');
+                }
+            };
+            
+            reader.readAsText(file);
+            event.target.value = ''; // Reset input
+        }
+
+        function clearAllData() {
+            if (confirm('Bütün yüklənmiş faylları və tətbiqləri silmək istədiyinizdən əminsiniz?\n\nBu əməliyyatı geri qaytarmaq olmayacaq!')) {
+                uploadedFiles = [];
+                uploadedApps = [];
+                
+                filterFiles('all');
+                filterApps('all');
+                
+                showNotification('Məlumatlar Təmizləndi', 'Bütün fayllar və tətbiqlər silindi', 'success');
+            }
+        }
+
+        function autoSaveData() {
+            if (uploadedFiles.length > 0 || uploadedApps.length > 0) {
+                const data = {
+                    files: uploadedFiles,
+                    apps: uploadedApps,
+                    timestamp: Date.now()
+                };
+                
+                // Create auto-backup
+                const jsonString = JSON.stringify(data);
+                console.log('Auto-backup created:', data);
+                
+                // Show backup reminder every 10 items
+                const totalItems = uploadedFiles.length + uploadedApps.length;
+                if (totalItems > 0 && totalItems % 10 === 0) {
+                    showNotification('Backup Xatırlatması', 
+                        `${totalItems} məlumat əlavə etmisiniz. Backup yaradmağı unutmayın!`, 
+                        'info');
+                }
+            }
+        }
+
+        // Content switching functionality
+        function showContent(sectionId) {
+            // Hide all content panels
+            const panels = document.querySelectorAll('.content-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
+
+            // Remove active class from all nav buttons
+            const buttons = document.querySelectorAll('.nav-button');
+            buttons.forEach(button => button.classList.remove('active'));
+
+            // Show selected panel
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.closest('.nav-button').classList.add('active');
+
+            // Smooth scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Upload tab switching for Research section
+        function switchUploadTab(tabName) {
+            // Remove active class from all tabs
+            document.querySelectorAll('#researchUploadZone .upload-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('#researchUploadZone .upload-content').forEach(content => content.classList.remove('active'));
+
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+            document.getElementById(tabName + '-upload').classList.add('active');
+
+            currentUploadTab = tabName;
+        }
+
+        // App tab switching
+        function switchAppTab(tabName) {
+            // Remove active class from all tabs
+            document.querySelectorAll('#appUploadZone .upload-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('#appUploadZone .upload-content').forEach(content => content.classList.remove('active'));
+
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+            document.getElementById(tabName + '-app').classList.add('active');
+
+            currentAppTab = tabName;
+        }
+
+        // GitHub App Handler
+        function addGitHubApp() {
+            const url = document.getElementById('appGithubUrl').value.trim();
+            const title = document.getElementById('appGithubTitle').value.trim();
+            const type = document.getElementById('appGithubType').value;
+            const description = document.getElementById('appGithubDescription').value.trim();
+
+            if (!url || !title) {
+                showNotification('Xəta', 'URL və başlıq mütləq doldurulmalıdır!', 'error');
+                return;
+            }
+
+            if (!url.includes('github.com')) {
+                showNotification('Xəta', 'Zəhmət olmasa GitHub.com linkini daxil edin!', 'error');
+                return;
+            }
+
+            const appInfo = {
+                id: Date.now(),
+                title: title,
+                url: url,
+                type: 'github',
+                appType: type,
+                description: description || 'GitHub repository tətbiqi',
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed'
+            };
+
+            uploadedApps.push(appInfo);
+            
+            // Clear form
+            document.getElementById('appGithubUrl').value = '';
+            document.getElementById('appGithubTitle').value = '';
+            document.getElementById('appGithubDescription').value = '';
+
+            filterApps(currentAppFilter);
+            autoSaveData(); // Auto-backup after adding
+            showNotification('GitHub Tətbiqi Əlavə Edildi', `"${title}" tətbiq kitabxanasına əlavə edildi`, 'success');
+        }
+
+        // Shinyapps.io Handler
+        function addShinyappsApp() {
+            const url = document.getElementById('shinyappsUrl').value.trim();
+            const title = document.getElementById('shinyappsTitle').value.trim();
+            const category = document.getElementById('shinyappsCategory').value;
+            const description = document.getElementById('shinyappsDescription').value.trim();
+
+            if (!url || !title) {
+                showNotification('Xəta', 'URL və başlıq mütləq doldurulmalıdır!', 'error');
+                return;
+            }
+
+            if (!url.includes('shinyapps.io')) {
+                showNotification('Xəta', 'Zəhmət olmasa shinyapps.io linkini daxil edin!', 'error');
+                return;
+            }
+
+            const appInfo = {
+                id: Date.now(),
+                title: title,
+                url: url,
+                type: 'shinyapps',
+                appType: category,
+                description: description || 'Shinyapps.io tətbiqi',
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed'
+            };
+
+            uploadedApps.push(appInfo);
+            
+            // Clear form
+            document.getElementById('shinyappsUrl').value = '';
+            document.getElementById('shinyappsTitle').value = '';
+            document.getElementById('shinyappsDescription').value = '';
+
+            filterApps(currentAppFilter);
+            autoSaveData(); // Auto-backup
+            showNotification('Shinyapps.io Əlavə Edildi', `"${title}" tətbiq kitabxanasına əlavə edildi`, 'success');
+        }
+
+        // ZIP App Upload Handler
+        function handleZipAppUpload(event) {
+            const file = event.target.files[0];
+            const title = document.getElementById('zipAppTitle').value.trim();
+            const description = document.getElementById('zipAppDescription').value.trim();
+
+            if (!file) return;
+
+            if (!title) {
+                showNotification('Xəta', 'Tətbiq başlığını daxil edin!', 'error');
+                return;
+            }
+
+            const appInfo = {
+                id: Date.now(),
+                title: title,
+                fileName: file.name,
+                fileSize: file.size,
+                type: 'zip',
+                appType: 'archive',
+                description: description || 'ZIP formatında yüklənmiş tətbiq',
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed',
+                file: file
+            };
+
+            uploadedApps.push(appInfo);
+            
+            // Clear form
+            document.getElementById('zipAppTitle').value = '';
+            document.getElementById('zipAppDescription').value = '';
+            event.target.value = '';
+
+            filterApps(currentAppFilter);
+            autoSaveData(); // Auto-backup
+            showNotification('ZIP Tətbiqi Əlavə Edildi', `"${title}" tətbiq kitabxanasına əlavə edildi`, 'success');
+        }
+
+        // Repository App Handler
+        function addRepositoryApp() {
+            const platform = document.getElementById('repoPlatform').value;
+            const url = document.getElementById('repoUrl').value.trim();
+            const title = document.getElementById('repoTitle').value.trim();
+            const type = document.getElementById('repoType').value;
+            const description = document.getElementById('repoDescription').value.trim();
+
+            if (!url || !title) {
+                showNotification('Xəta', 'URL və başlıq mütləq doldurulmalıdır!', 'error');
+                return;
+            }
+
+            // Platform validation
+            const platformValidation = {
+                'gitlab': 'gitlab.com',
+                'bitbucket': 'bitbucket.org',
+                'codeberg': 'codeberg.org',
+                'sourceforge': 'sourceforge.net'
+            };
+
+            if (platformValidation[platform] && !url.includes(platformValidation[platform])) {
+                showNotification('Xəta', `Zəhmət olmasa ${platformValidation[platform]} linkini daxil edin!`, 'error');
+                return;
+            }
+
+            const appInfo = {
+                id: Date.now(),
+                title: title,
+                url: url,
+                platform: platform,
+                type: 'repos',
+                appType: type,
+                description: description || `${platform} repository tətbiqi`,
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed'
+            };
+
+            uploadedApps.push(appInfo);
+            
+            // Clear form
+            document.getElementById('repoUrl').value = '';
+            document.getElementById('repoTitle').value = '';
+            document.getElementById('repoDescription').value = '';
+
+            filterApps(currentAppFilter);
+            autoSaveData(); // Auto-backup
+            showNotification('Repository Əlavə Edildi', `"${title}" tətbiq kitabxanasına əlavə edildi`, 'success');
+        }
+
+        // Cloud App Handler
+        function addCloudApp() {
+            const platform = document.getElementById('cloudPlatform').value;
+            const url = document.getElementById('cloudUrl').value.trim();
+            const title = document.getElementById('cloudTitle').value.trim();
+            const appType = document.getElementById('cloudAppType').value;
+            const description = document.getElementById('cloudDescription').value.trim();
+
+            if (!url || !title) {
+                showNotification('Xəta', 'URL və başlıq mütləq doldurulmalıdır!', 'error');
+                return;
+            }
+
+            // Basic URL validation
+            if (!url.startsWith('http://') && !url.startsWith('https://')) {
+                showNotification('Xəta', 'Zəhmət olmasa tam URL daxil edin (http:// və ya https:// ilə)!', 'error');
+                return;
+            }
+
+            const appInfo = {
+                id: Date.now(),
+                title: title,
+                url: url,
+                platform: platform,
+                type: 'cloud',
+                appType: appType,
+                description: description || `${platform} platformasında hosted tətbiq`,
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed'
+            };
+
+            uploadedApps.push(appInfo);
+            
+            // Clear form
+            document.getElementById('cloudUrl').value = '';
+            document.getElementById('cloudTitle').value = '';
+            document.getElementById('cloudDescription').value = '';
+
+            filterApps(currentAppFilter);
+            autoSaveData(); // Auto-backup
+            showNotification('Cloud Tətbiqi Əlavə Edildi', `"${title}" tətbiq kitabxanasına əlavə edildi`, 'success');
+        }
+
+        // Manual App Handler  
+        function addManualApp() {
+            const url = document.getElementById('manualAppUrl').value.trim();
+            const title = document.getElementById('manualAppTitle').value.trim();
+            const platform = document.getElementById('manualAppPlatform').value.trim();
+            const description = document.getElementById('manualAppDescription').value.trim();
+
+            if (!url || !title) {
+                showNotification('Xəta', 'URL və başlıq mütləq doldurulmalıdır!', 'error');
+                return;
+            }
+
+            const appInfo = {
+                id: Date.now(),
+                title: title,
+                url: url,
+                platform: platform || 'Naməlum Platform',
+                type: 'manual',
+                appType: 'external',
+                description: description || 'Xarici platforma tətbiqi',
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed'
+            };
+
+            uploadedApps.push(appInfo);
+            
+            // Clear form
+            document.getElementById('manualAppUrl').value = '';
+            document.getElementById('manualAppTitle').value = '';
+            document.getElementById('manualAppPlatform').value = '';
+            document.getElementById('manualAppDescription').value = '';
+
+            filterApps(currentAppFilter);
+            autoSaveData(); // Auto-backup
+            showNotification('Xarici Tətbiq Əlavə Edildi', `"${title}" tətbiq kitabxanasına əlavə edildi`, 'success');
+        }
+
+        // Create Shiny Template
+        function createShinyTemplate() {
+            const uiTemplate = `# UI.R fayl nümunəsi
+library(shiny)
+
+fluidPage(
+  titlePanel("Testologiya Analizi"),
+  
+  sidebarLayout(
+    sidebarPanel(
+      h3("Giriş Parametrləri"),
+      fileInput("datafile", "CSV Fayl Yüklə:",
+                accept = c(".csv")),
+      
+      selectInput("analysis_type", "Analiz Növü:",
+                  choices = list("Tanımlayıcı Statistika" = "descriptive",
+                                "Güvenilirlik Analizi" = "reliability",
+                                "Madde Analizi" = "item_analysis")),
+      
+      actionButton("analyze", "Analizi Başlat", class = "btn-primary")
+    ),
+    
+    mainPanel(
+      tabsetPanel(
+        tabPanel("Nəticələr", verbatimTextOutput("results")),
+        tabPanel("Qrafiklər", plotOutput("plots")),
+        tabPanel("Hesabat", downloadButton("downloadReport", "Hesabat Yüklə"))
+      )
+    )
+  )
+)`;
+
+            const serverTemplate = `# SERVER.R fayl nümunəsi
+library(shiny)
+library(psych)
+library(ggplot2)
+
+function(input, output, session) {
+  
+  # Məlumat yükləmə
+  data <- reactive({
+    req(input$datafile)
+    read.csv(input$datafile$datapath, stringsAsFactors = FALSE)
+  })
+  
+  # Analiz nəticələri
+  analysis_results <- eventReactive(input$analyze, {
+    df <- data()
+    
+    switch(input$analysis_type,
+           "descriptive" = summary(df),
+           "reliability" = alpha(df),
+           "item_analysis" = item.stats(df)
+    )
+  })
+  
+  # Nəticələr çıxışı
+  output$results <- renderPrint({
+    analysis_results()
+  })
+  
+  # Qrafiklər
+  output$plots <- renderPlot({
+    df <- data()
+    if(input$analysis_type == "descriptive") {
+      hist(df[,1], main = "Paylanma Histogramı", xlab = "Dəyərlər")
+    }
+  })
+  
+  # Hesabat yükləmə
+  output$downloadReport <- downloadHandler(
+    filename = function() {
+      paste("analiz_hesabati_", Sys.Date(), ".html", sep = "")
+    },
+    content = function(file) {
+      # Hesabat yaratma kodu
+    }
+  )
+}`;
+
+            // Create and download template files
+            const uiBlob = new Blob([uiTemplate], { type: 'text/plain' });
+            const serverBlob = new Blob([serverTemplate], { type: 'text/plain' });
+            
+            const uiFile = new File([uiBlob], 'ui.R', { type: 'text/plain' });
+            const serverFile = new File([serverBlob], 'server.R', { type: 'text/plain' });
+            
+            // Download UI file
+            const uiUrl = URL.createObjectURL(uiFile);
+            const uiLink = document.createElement('a');
+            uiLink.href = uiUrl;
+            uiLink.download = 'ui.R';
+            document.body.appendChild(uiLink);
+            uiLink.click();
+            document.body.removeChild(uiLink);
+            URL.revokeObjectURL(uiUrl);
+            
+            // Download Server file
+            setTimeout(() => {
+                const serverUrl = URL.createObjectURL(serverFile);
+                const serverLink = document.createElement('a');
+                serverLink.href = serverUrl;
+                serverLink.download = 'server.R';
+                document.body.appendChild(serverLink);
+                serverLink.click();
+                document.body.removeChild(serverLink);
+                URL.revokeObjectURL(serverUrl);
+            }, 1000);
+            
+            showNotification('Shiny Şablon Yaradıldı', 'ui.R və server.R faylları yüklənməyə başladı', 'success');
+        }
+
+        // App filtering
+        function filterApps(filterType) {
+            currentAppFilter = filterType;
+            
+            // Update filter buttons
+            document.querySelectorAll('#applications .filter-btn').forEach(btn => btn.classList.remove('active'));
+            event?.target?.classList.add('active') || document.querySelector(`[onclick="filterApps('${filterType}')"]`)?.classList.add('active');
+
+            const container = document.getElementById('uploadedApps');
+            container.innerHTML = '';
+
+            const filteredApps = uploadedApps.filter(app => {
+                if (filterType === 'all') return true;
+                return app.type === filterType;
+            });
+
+            if (filteredApps.length === 0) {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: #6c757d;">
+                        <h3>Heç bir tətbiq tapılmadı</h3>
+                        <p>${filterType === 'all' ? 'Hələ heç bir tətbiq əlavə edilməyib.' : 'Bu filterdə heç bir tətbiq yoxdur.'}</p>
+                    </div>
+                `;
+                return;
+            }
+
+            filteredApps.forEach(app => addAppCard(app));
+        }
+
+        function addAppCard(appInfo) {
+            const container = document.getElementById('uploadedApps');
+            
+            const card = document.createElement('div');
+            card.className = `info-card ${appInfo.type}-app`;
+            card.style.marginBottom = '20px';
+            card.setAttribute('data-app-id', appInfo.id);
+            card.setAttribute('data-app-type', appInfo.type);
+            
+            const icon = getAppIcon(appInfo.type, appInfo.appType);
+            const description = appInfo.description;
+            const actions = getAppActions(appInfo);
+            
+            card.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 20px;">
+                    <div style="flex: 1;">
+                        <h3 class="card-title">${icon} ${appInfo.title}</h3>
+                        <p class="card-period">${appInfo.addedDate} | ${getAppTypeLabel(appInfo.type)}</p>
+                        <p class="card-description">${description}</p>
+                        ${getAppAdditionalInfo(appInfo)}
+                    </div>
+                    <div class="card-actions" style="flex-shrink: 0; min-width: 200px;">
+                        ${actions}
+                    </div>
+                </div>
+            `;
+            
+            container.appendChild(card);
+        }
+
+        function getAppIcon(type, appType) {
+            const icons = {
+                'github': '💻',
+                'repos': '🔗',
+                'shinyapps': '🌐',
+                'cloud': '☁️',
+                'zip': '📦',
+                'manual': '🔗'
+            };
+            return icons[type] || '📱';
+        }
+
+        function getAppTypeLabel(type) {
+            const labels = {
+                'github': 'GitHub Repository',
+                'repos': 'Digər Repository',
+                'shinyapps': 'Shinyapps.io',
+                'cloud': 'Cloud Hosting',
+                'zip': 'ZIP Fayl',
+                'manual': 'Xarici Platform'
+            };
+            return labels[type] || 'Naməlum';
+        }
+
+        function getAppAdditionalInfo(appInfo) {
+            let info = '';
+            
+            if (appInfo.type === 'github' && appInfo.url) {
+                info += `<div style="background: #f8f9fa; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                    <strong>💻 GitHub Repository</strong><br>
+                    <a href="${appInfo.url}" target="_blank" style="color: #6c5ce7; text-decoration: none; word-break: break-all;">${appInfo.url}</a>
+                </div>`;
+            }
+            
+            if (appInfo.type === 'repos' && appInfo.url) {
+                const platformNames = {
+                    'gitlab': 'GitLab',
+                    'bitbucket': 'Bitbucket', 
+                    'codeberg': 'Codeberg',
+                    'sourceforge': 'SourceForge',
+                    'other': 'Digər Repository'
+                };
+                const platformName = platformNames[appInfo.platform] || 'Repository';
+                info += `<div style="background: #fff5f5; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                    <strong>🔗 ${platformName}</strong><br>
+                    <a href="${appInfo.url}" target="_blank" style="color: #e17055; text-decoration: none; word-break: break-all;">${appInfo.url}</a>
+                </div>`;
+            }
+            
+            if (appInfo.type === 'shinyapps' && appInfo.url) {
+                info += `<div style="background: #e8f4ff; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                    <strong>🌐 Canlı Tətbiq</strong><br>
+                    <a href="${appInfo.url}" target="_blank" style="color: #74b9ff; text-decoration: none; word-break: break-all;">${appInfo.url}</a>
+                </div>`;
+            }
+            
+            if (appInfo.type === 'cloud' && appInfo.url) {
+                const cloudNames = {
+                    'digitalocean': 'DigitalOcean',
+                    'aws': 'Amazon AWS',
+                    'gcp': 'Google Cloud',
+                    'azure': 'Microsoft Azure',
+                    'heroku': 'Heroku',
+                    'vercel': 'Vercel',
+                    'netlify': 'Netlify',
+                    'other': 'Cloud Platform'
+                };
+                const cloudName = cloudNames[appInfo.platform] || 'Cloud';
+                info += `<div style="background: #f0fffe; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                    <strong>☁️ ${cloudName}</strong><br>
+                    <a href="${appInfo.url}" target="_blank" style="color: #00b894; text-decoration: none; word-break: break-all;">${appInfo.url}</a>
+                </div>`;
+            }
+            
+            if (appInfo.platform && (appInfo.type === 'repos' || appInfo.type === 'cloud' || appInfo.type === 'manual')) {
+                const platformDisplay = appInfo.platform.charAt(0).toUpperCase() + appInfo.platform.slice(1);
+                info += `<p style="color: #00b894; font-size: 0.9em; margin-top: 10px;">🏢 Platform: ${platformDisplay}</p>`;
+            }
+            
+            if (appInfo.fileSize) {
+                info += `<p style="color: #e17055; font-size: 0.9em;">📦 Fayl ölçüsü: ${formatFileSize(appInfo.fileSize)}</p>`;
+            }
+            
+            return info;
+        }
+
+        function getAppActions(appInfo) {
+            let actions = '';
+            
+            // Launch/Open action
+            if (appInfo.url) {
+                actions += `<button class="action-button success" onclick="window.open('${appInfo.url}', '_blank')">🚀 Tətbiqi Aç</button>`;
+            }
+            
+            // Download action for ZIP files
+            if (appInfo.file) {
+                actions += `<button class="action-button secondary" onclick="downloadApp(${appInfo.id})">⬇️ Yüklə</button>`;
+            }
+            
+            // Edit action
+            actions += `<button class="action-button" onclick="editApp(${appInfo.id})">✏️ Redaktə</button>`;
+            
+            // Delete action
+            actions += `<button class="action-button danger" onclick="removeApp(${appInfo.id})">🗑️ Sil</button>`;
+            
+            return actions;
+        }
+
+        function downloadApp(appId) {
+            const app = uploadedApps.find(a => a.id === appId);
+            if (!app || !app.file) {
+                showNotification('Xəta', 'Fayl yüklənmə üçün əlçatan deyil', 'error');
+                return;
+            }
+
+            const url = URL.createObjectURL(app.file);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = app.fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            showNotification('Yüklənir', `${app.title} yüklənməyə başladı`, 'success');
+        }
+
+        function editApp(appId) {
+            const app = uploadedApps.find(a => a.id === appId);
+            if (!app) return;
+
+            const modal = createModal();
+            const content = modal.querySelector('.modal-content');
+            
+            content.innerHTML = `
+                <div class="modal-header">
+                    <h3>✏️ ${app.title} Redaktəsi</h3>
+                    <button onclick="closeModal()" class="close-btn">×</button>
+                </div>
+                <div class="modal-body">
+                    <div style="margin-bottom: 15px;">
+                        <label>Başlıq:</label>
+                        <input type="text" id="editAppTitle" value="${app.title}" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    </div>
+                    ${app.url ? `
+                    <div style="margin-bottom: 15px;">
+                        <label>URL:</label>
+                        <input type="url" id="editAppUrl" value="${app.url}" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    </div>` : ''}
+                    ${app.platform ? `
+                    <div style="margin-bottom: 15px;">
+                        <label>Platform:</label>
+                        <input type="text" id="editAppPlatform" value="${app.platform}" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    </div>` : ''}
+                    <div style="margin-bottom: 15px;">
+                        <label>Təsvir:</label>
+                        <textarea id="editAppDescription" rows="4" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">${app.description || ''}</textarea>
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="action-button success" onclick="saveAppEdit(${appId})">💾 Yadda Saxla</button>
+                        <button class="action-button" onclick="closeModal()">❌ Ləğv Et</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function saveAppEdit(appId) {
+            const app = uploadedApps.find(a => a.id === appId);
+            if (!app) return;
+
+            app.title = document.getElementById('editAppTitle').value;
+            if (document.getElementById('editAppUrl')) {
+                app.url = document.getElementById('editAppUrl').value;
+            }
+            if (document.getElementById('editAppPlatform')) {
+                app.platform = document.getElementById('editAppPlatform').value;
+            }
+            app.description = document.getElementById('editAppDescription').value;
+
+            closeModal();
+            filterApps(currentAppFilter);
+            showNotification('Yeniləndi', 'Tətbiq məlumatları uğurla yeniləndi!', 'success');
+        }
+
+        function removeApp(appId) {
+            const app = uploadedApps.find(a => a.id === appId);
+            if (!app) return;
+
+            if (confirm(`"${app.title}" tətbiqini silmək istədiyinizdən əminsiniz?`)) {
+                uploadedApps = uploadedApps.filter(a => a.id !== appId);
+                filterApps(currentAppFilter);
+                autoSaveData(); // Auto-backup after deletion
+                showNotification('Silindi', 'Tətbiq uğurla silindi', 'success');
+            }
+        }
+
+        // Enhanced drag and drop functionality
+        function setupDragAndDrop() {
+            const uploadZone = document.getElementById('researchUploadZone');
+            if (!uploadZone) {
+                console.error('Research upload zone not found');
+                return;
+            }
+            
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                uploadZone.addEventListener(eventName, preventDefaults, false);
+            });
+
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+            ['dragenter', 'dragover'].forEach(eventName => {
+                uploadZone.addEventListener(eventName, highlight, false);
+            });
+
+            ['dragleave', 'drop'].forEach(eventName => {
+                uploadZone.addEventListener(eventName, unhighlight, false);
+            });
+
+            function highlight(e) {
+                uploadZone.classList.add('drag-over');
+            }
+
+            function unhighlight(e) {
+                uploadZone.classList.remove('drag-over');
+            }
+
+            uploadZone.addEventListener('drop', handleDrop, false);
+
+            function handleDrop(e) {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                
+                if (files.length === 0) {
+                    showNotification('Məlumat', 'Heç bir fayl seçilmədi', 'info');
+                    return;
+                }
+                
+                // Simulate file input event
+                const mockEvent = {
+                    target: { files: files }
+                };
+                handleFileUpload(mockEvent);
+            }
+            
+            console.log('Drag & Drop sistemi hazırdır');
+        }
+
+        // Enhanced file upload handler
+        function handleFileUpload(event) {
+            const files = Array.from(event.target.files);
+            if (files.length === 0) return;
+
+            showProgress();
+            
+            let processedCount = 0;
+            const totalFiles = files.length;
+
+            files.forEach((file, index) => {
+                setTimeout(() => {
+                    processFile(file, index, () => {
+                        processedCount++;
+                        updateProgress((processedCount / totalFiles) * 100, `${processedCount}/${totalFiles} fayl emal edildi`);
+                        
+                        if (processedCount === totalFiles) {
+                            hideProgress();
+                            autoSaveData(); // Auto-backup after file upload
+                            showNotification('Yükləmə Tamamlandı', `${totalFiles} fayl uğurla əlavə edildi!`, 'success');
+                            filterFiles(currentFilter); // Refresh display
+                        }
+                    });
+                }, index * 100); // Stagger processing
+            });
+
+            // Reset input
+            if (event.target.value) {
+                event.target.value = '';
+            }
+        }
+
+        function processFile(file, index, callback) {
+            const fileInfo = {
+                id: Date.now() + index,
+                name: file.name,
+                size: file.size,
+                type: getFileType(file.name),
+                lastModified: new Date(file.lastModified).toLocaleDateString('az-AZ'),
+                content: null,
+                file: file,
+                status: 'processing',
+                addedDate: new Date().toLocaleDateString('az-AZ')
+            };
+
+            uploadedFiles.push(fileInfo);
+
+            // Read file content if it's a text file
+            const textFormats = ['.txt', '.md', '.rmd', '.r', '.html', '.css', '.js', '.csv'];
+            const isTextFile = textFormats.some(format => file.name.toLowerCase().endsWith(format));
+            
+            if (isTextFile && file.size < 1024 * 1024) { // Only read files smaller than 1MB
+                const reader = new FileReader();
+                
+                reader.onload = (e) => {
+                    fileInfo.content = e.target.result;
+                    fileInfo.status = 'completed';
+                    callback();
+                };
+                
+                reader.onerror = () => {
+                    fileInfo.status = 'error';
+                    callback();
+                };
+                
+                reader.readAsText(file, 'UTF-8');
+            } else {
+                fileInfo.status = 'ready';
+                setTimeout(callback, 200);
+            }
+        }
+
+        function getFileType(filename) {
+            const extension = filename.split('.').pop().toLowerCase();
+            const typeMap = {
+                'rmd': 'rmd',
+                'r': 'r-script',
+                'pdf': 'pdf',
+                'doc': 'word',
+                'docx': 'word',
+                'html': 'html',
+                'txt': 'text',
+                'md': 'markdown',
+                'zip': 'archive',
+                'csv': 'data',
+                'xlsx': 'data'
+            };
+            return typeMap[extension] || 'unknown';
+        }
+
+        // RPubs link handler
+        function addRPubsLink() {
+            const url = document.getElementById('rpubsUrl').value.trim();
+            const title = document.getElementById('rpubsTitle').value.trim();
+            const description = document.getElementById('rpubsDescription').value.trim();
+
+            if (!url || !title) {
+                showNotification('Xəta', 'URL və başlıq mütləq doldurulmalıdır!', 'error');
+                return;
+            }
+
+            if (!url.includes('rpubs.com')) {
+                showNotification('Xəta', 'Zəhmət olmasa RPubs.com linkini daxil edin!', 'error');
+                return;
+            }
+
+            const rpubsInfo = {
+                id: Date.now(),
+                title: title,
+                url: url,
+                description: description || 'RPubs publikasiyası',
+                type: 'rpubs',
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed'
+            };
+
+            uploadedFiles.push(rpubsInfo);
+            
+            // Clear form
+            document.getElementById('rpubsUrl').value = '';
+            document.getElementById('rpubsTitle').value = '';
+            document.getElementById('rpubsDescription').value = '';
+
+            filterFiles(currentFilter);
+            autoSaveData(); // Auto-backup
+            showNotification('RPubs Əlavə Edildi', `"${title}" kitabxanaya əlavə edildi`, 'success');
+        }
+
+        // GitHub repository handler
+        function addGitHubRepo() {
+            const url = document.getElementById('githubUrl').value.trim();
+            const title = document.getElementById('githubTitle').value.trim();
+            const description = document.getElementById('githubDescription').value.trim();
+
+            if (!url || !title) {
+                showNotification('Xəta', 'URL və başlıq mütləq doldurulmalıdır!', 'error');
+                return;
+            }
+
+            if (!url.includes('github.com')) {
+                showNotification('Xəta', 'Zəhmət olmasa GitHub.com linkini daxil edin!', 'error');
+                return;
+            }
+
+            const githubInfo = {
+                id: Date.now(),
+                title: title,
+                url: url,
+                description: description || 'GitHub repository',
+                type: 'github',
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed'
+            };
+
+            uploadedFiles.push(githubInfo);
+            
+            // Clear form
+            document.getElementById('githubUrl').value = '';
+            document.getElementById('githubTitle').value = '';
+            document.getElementById('githubDescription').value = '';
+
+            filterFiles(currentFilter);
+            autoSaveData(); // Auto-backup
+            showNotification('GitHub Repo Əlavə Edildi', `"${title}" kitabxanaya əlavə edildi`, 'success');
+        }
+
+        // Research Repository Handler
+        function addResearchRepositoryEntry() {
+            const platform = document.getElementById('researchRepoPlatform').value;
+            const url = document.getElementById('researchRepoUrl').value.trim();
+            const title = document.getElementById('researchRepoTitle').value.trim();
+            const type = document.getElementById('researchRepoType').value;
+            const description = document.getElementById('researchRepoDescription').value.trim();
+
+            if (!url || !title) {
+                showNotification('Xəta', 'URL və başlıq mütləq doldurulmalıdır!', 'error');
+                return;
+            }
+
+            // Platform validation
+            const platformValidation = {
+                'gitlab': 'gitlab.com',
+                'bitbucket': 'bitbucket.org',
+                'codeberg': 'codeberg.org',
+                'sourceforge': 'sourceforge.net'
+            };
+
+            if (platformValidation[platform] && !url.includes(platformValidation[platform])) {
+                showNotification('Xəta', `Zəhmət olmasa ${platformValidation[platform]} linkini daxil edin!`, 'error');
+                return;
+            }
+
+            const repoInfo = {
+                id: Date.now(),
+                title: title,
+                url: url,
+                platform: platform,
+                type: 'repos',
+                materialType: type,
+                description: description || `${platform} repository elmi materialı`,
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed'
+            };
+
+            uploadedFiles.push(repoInfo);
+            
+            // Clear form
+            document.getElementById('researchRepoUrl').value = '';
+            document.getElementById('researchRepoTitle').value = '';
+            document.getElementById('researchRepoDescription').value = '';
+
+            filterFiles(currentFilter);
+            autoSaveData(); // Auto-backup
+            showNotification('Repository Materialı Əlavə Edildi', `"${title}" elmi kitabxanaya əlavə edildi`, 'success');
+        }
+
+        // Research Cloud Handler
+        function addResearchCloudEntry() {
+            const platform = document.getElementById('researchCloudPlatform').value;
+            const url = document.getElementById('researchCloudUrl').value.trim();
+            const title = document.getElementById('researchCloudTitle').value.trim();
+            const materialType = document.getElementById('researchCloudType').value;
+            const description = document.getElementById('researchCloudDescription').value.trim();
+
+            if (!url || !title) {
+                showNotification('Xəta', 'URL və başlıq mütləq doldurulmalıdır!', 'error');
+                return;
+            }
+
+            // Basic URL validation
+            if (!url.startsWith('http://') && !url.startsWith('https://')) {
+                showNotification('Xəta', 'Zəhmət olmasa tam URL daxil edin (http:// və ya https:// ilə)!', 'error');
+                return;
+            }
+
+            // Special validation for shinyapps.io
+            if (platform === 'shinyapps' && !url.includes('shinyapps.io')) {
+                showNotification('Xəta', 'Zəhmət olmasa shinyapps.io linkini daxil edin!', 'error');
+                return;
+            }
+
+            const cloudInfo = {
+                id: Date.now(),
+                title: title,
+                url: url,
+                platform: platform,
+                type: 'cloud',
+                materialType: materialType,
+                description: description || `${platform} platformasında hosted elmi material`,
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed'
+            };
+
+            uploadedFiles.push(cloudInfo);
+            
+            // Clear form
+            document.getElementById('researchCloudUrl').value = '';
+            document.getElementById('researchCloudTitle').value = '';
+            document.getElementById('researchCloudDescription').value = '';
+
+            filterFiles(currentFilter);
+            autoSaveData(); // Auto-backup
+            showNotification('Cloud Materialı Əlavə Edildi', `"${title}" elmi kitabxanaya əlavə edildi`, 'success');
+        }
+
+        // Manual Entry Handler
+        function addManualEntry() {
+            const title = document.getElementById('manualTitle').value.trim();
+            const authors = document.getElementById('manualAuthors').value.trim();
+            const year = document.getElementById('manualYear').value.trim();
+            const link = document.getElementById('manualLink').value.trim();
+            const description = document.getElementById('manualDescription').value.trim();
+
+            if (!title || !description) {
+                showNotification('Xəta', 'Başlıq və təsvir mütləq doldurulmalıdır!', 'error');
+                return;
+            }
+
+            const manualInfo = {
+                id: Date.now(),
+                title: title,
+                authors: authors,
+                year: year,
+                url: link,
+                description: description,
+                type: 'manual',
+                addedDate: new Date().toLocaleDateString('az-AZ'),
+                status: 'completed'
+            };
+
+            uploadedFiles.push(manualInfo);
+            
+            // Clear form
+            document.getElementById('manualTitle').value = '';
+            document.getElementById('manualAuthors').value = '';
+            document.getElementById('manualYear').value = '';
+            document.getElementById('manualLink').value = '';
+            document.getElementById('manualDescription').value = '';
+
+            filterFiles(currentFilter);
+            autoSaveData(); // Auto-backup
+            showNotification('Manual Giriş Əlavə Edildi', `"${title}" kitabxanaya əlavə edildi`, 'success');
+        }
+
+        // Create new R Markdown file
+        function createNewRmd() {
+            const filename = prompt('Yeni .Rmd faylının adını daxil edin:');
+            if (!filename) return;
+
+            const rmdTemplate = `---
+title: "${filename}"
+author: "Talıbov Tariyel İsmayıl oğlu"
+date: "${new Date().toLocaleDateString('az-AZ')}"
+output: html_document
+---
+
+\`\`\`{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+\`\`\`
+
+## Başlıq
+
+Bu bölmədə məzmunu yazın.
+
+\`\`\`{r}
+# R kod bloku
+summary(cars)
+\`\`\`
+
+## Qrafiklər
+
+\`\`\`{r}
+plot(cars)
+\`\`\`
+`;
+
+            const blob = new Blob([rmdTemplate], { type: 'text/plain' });
+            const file = new File([blob], filename.endsWith('.Rmd') ? filename : filename + '.Rmd', { type: 'text/plain' });
+            
+            const mockEvent = {
+                target: { files: [file] }
+            };
+            
+            handleFileUpload(mockEvent);
+            showNotification('Yeni .Rmd Yaradıldı', `${file.name} faylı yaradıldı və kitabxanaya əlavə edildi`, 'success');
+        }
+
+        // File filtering for Research section
+        function filterFiles(filterType) {
+            currentFilter = filterType;
+            
+            // Update filter buttons - specifically target research section
+            document.querySelectorAll('#research .filter-btn').forEach(btn => btn.classList.remove('active'));
+            event?.target?.classList.add('active') || document.querySelector(`#research [onclick="filterFiles('${filterType}')"]`)?.classList.add('active');
+
+            const container = document.getElementById('uploadedFiles');
+            if (!container) {
+                console.error('uploadedFiles container not found');
+                return;
+            }
+            
+            container.innerHTML = '';
+
+            const filteredFiles = uploadedFiles.filter(file => {
+                if (filterType === 'all') return true;
+                return file.type === filterType;
+            });
+
+            if (filteredFiles.length === 0) {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: #6c757d;">
+                        <h3>Heç bir fayl tapılmadı</h3>
+                        <p>${filterType === 'all' ? 'Hələ heç bir fayl yüklənməyib.' : 'Bu filterdə heç bir fayl yoxdur.'}</p>
+                    </div>
+                `;
+                return;
+            }
+
+            filteredFiles.forEach(file => addFileCard(file));
+        }
+
+        function addFileCard(fileInfo) {
+            const container = document.getElementById('uploadedFiles');
+            
+            const card = document.createElement('div');
+            card.className = `info-card ${fileInfo.type}-file`;
+            card.style.marginBottom = '20px';
+            card.setAttribute('data-file-id', fileInfo.id);
+            card.setAttribute('data-file-type', fileInfo.type);
+            
+            const icon = getFileIcon(fileInfo.type, fileInfo.name);
+            const description = getFileDescription(fileInfo);
+            const actions = getFileActions(fileInfo);
+            
+            card.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: start; gap: 20px;">
+                    <div style="flex: 1;">
+                        <h3 class="card-title">${icon} ${fileInfo.title || fileInfo.name}</h3>
+                        <p class="card-period">${fileInfo.addedDate} | ${getFileTypeLabel(fileInfo.type)}</p>
+                        <p class="card-description">${description}</p>
+                        ${getAdditionalInfo(fileInfo)}
+                    </div>
+                    <div class="card-actions" style="flex-shrink: 0; min-width: 200px;">
+                        ${actions}
+                    </div>
+                </div>
+            `;
+            
+            container.appendChild(card);
+        }
+
+        function getFileIcon(type, filename) {
+            const icons = {
+                'rmd': '📊',
+                'r-script': '📈',
+                'pdf': '📄',
+                'word': '📝',
+                'html': '🌐',
+                'text': '📃',
+                'markdown': '📋',
+                'repos': '🔗',
+                'rpubs': '🌐',
+                'github': '💻',
+                'cloud': '☁️',
+                'manual': '✍️',
+                'archive': '📦',
+                'data': '📊'
+            };
+            return icons[type] || '📁';
+        }
+
+        function getFileTypeLabel(type) {
+            const labels = {
+                'rmd': 'R Markdown',
+                'r-script': 'R Script',
+                'pdf': 'PDF Sənəd',
+                'word': 'Word Sənəd',
+                'html': 'HTML Səhifə',
+                'text': 'Mətn Faylı',
+                'markdown': 'Markdown',
+                'repos': 'Digər Repository',
+                'rpubs': 'RPubs Publikasiyası',
+                'github': 'GitHub Repository',
+                'cloud': 'Cloud Hosting',
+                'manual': 'Manual Giriş',
+                'archive': 'Arxiv Faylı',
+                'data': 'Məlumat Faylı'
+            };
+            return labels[type] || 'Naməlum Format';
+        }
+
+        function getFileDescription(fileInfo) {
+            if (fileInfo.description) return fileInfo.description;
+            if (fileInfo.authors) return `Müəllif: ${fileInfo.authors}`;
+            if (fileInfo.size) return `Ölçü: ${formatFileSize(fileInfo.size)}`;
+            return 'Fayl təsviri əlçatan deyil';
+        }
+
+        function getAdditionalInfo(fileInfo) {
+            let info = '';
+            
+            if (fileInfo.type === 'repos' && fileInfo.url) {
+                const platformNames = {
+                    'gitlab': 'GitLab',
+                    'bitbucket': 'Bitbucket', 
+                    'codeberg': 'Codeberg',
+                    'sourceforge': 'SourceForge',
+                    'other': 'Digər Repository'
+                };
+                const platformName = platformNames[fileInfo.platform] || 'Repository';
+                info += `<div style="background: #fff5f5; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                    <strong>🔗 ${platformName} Repository</strong><br>
+                    <a href="${fileInfo.url}" target="_blank" style="color: #e17055; text-decoration: none; word-break: break-all;">${fileInfo.url}</a>
+                </div>`;
+            }
+            
+            if (fileInfo.type === 'rpubs' && fileInfo.url) {
+                info += `<div class="rpubs-info">
+                    <h4>🌐 RPubs Publikasiyası</h4>
+                    <a href="${fileInfo.url}" target="_blank" class="rpubs-link">RPubs-da Aç</a>
+                </div>`;
+            }
+            
+            if (fileInfo.type === 'github' && fileInfo.url) {
+                info += `<div style="background: #f8f9fa; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                    <strong>💻 GitHub Repository</strong><br>
+                    <a href="${fileInfo.url}" target="_blank" style="color: #6c5ce7; text-decoration: none;">Repository-də Bax</a>
+                </div>`;
+            }
+            
+            if (fileInfo.type === 'cloud' && fileInfo.url) {
+                const cloudNames = {
+                    'shinyapps': 'Shinyapps.io',
+                    'digitalocean': 'DigitalOcean',
+                    'aws': 'Amazon AWS',
+                    'gcp': 'Google Cloud',
+                    'azure': 'Microsoft Azure',
+                    'heroku': 'Heroku',
+                    'vercel': 'Vercel',
+                    'netlify': 'Netlify',
+                    'other': 'Cloud Platform'
+                };
+                const cloudName = cloudNames[fileInfo.platform] || 'Cloud';
+                info += `<div style="background: #f0fffe; padding: 15px; border-radius: 10px; margin-top: 10px;">
+                    <strong>☁️ ${cloudName} Hosted</strong><br>
+                    <a href="${fileInfo.url}" target="_blank" style="color: #00b894; text-decoration: none; word-break: break-all;">${fileInfo.url}</a>
+                </div>`;
+            }
+            
+            if (fileInfo.content && fileInfo.content.length > 0) {
+                info += `<p style="color: #27ae60; font-size: 0.9em; margin-top: 10px;">✅ Məzmun yükləndi: ${fileInfo.content.length} simvol</p>`;
+            }
+            
+            if (fileInfo.year) {
+                info += `<p style="color: #74b9ff; font-size: 0.9em;">📅 Nəşr ili: ${fileInfo.year}</p>`;
+            }
+            
+            if (fileInfo.materialType) {
+                const materialNames = {
+                    'rmarkdown': 'R Markdown Analiz',
+                    'research': 'Elmi Tədqiqat',
+                    'script': 'R Script',
+                    'dataset': 'Məlumat Toplusu',
+                    'paper': 'Elmi Məqalə',
+                    'book': 'Kitab/Əlyazma',
+                    'shiny': 'R Shiny Analiz',
+                    'dashboard': 'İnteraktiv Dashboard',
+                    'webapp': 'Web Tətbiqi',
+                    'document': 'Online Sənəd',
+                    'api': 'Data API'
+                };
+                const materialName = materialNames[fileInfo.materialType] || fileInfo.materialType;
+                info += `<p style="color: #2980b9; font-size: 0.9em;">📋 Material növü: ${materialName}</p>`;
+            }
+            
+            return info;
+        }
+
+        function getFileActions(fileInfo) {
+            let actions = '';
+            
+            // Preview action for text files
+            if (fileInfo.content) {
+                actions += `<button class="action-button" onclick="previewFile(${fileInfo.id})">👁️ Ön izləmə</button>`;
+            }
+            
+            // External link action
+            if (fileInfo.url) {
+                actions += `<button class="action-button secondary" onclick="window.open('${fileInfo.url}', '_blank')">🌐 Xarici Link</button>`;
+            }
+            
+            // Download action for actual files
+            if (fileInfo.file) {
+                actions += `<button class="action-button success" onclick="downloadFile(${fileInfo.id})">⬇️ Yüklə</button>`;
+            }
+            
+            // Edit action for editable content
+            if (fileInfo.type === 'manual' || fileInfo.type === 'rpubs' || fileInfo.type === 'github' || fileInfo.type === 'repos' || fileInfo.type === 'cloud') {
+                actions += `<button class="action-button" onclick="editFile(${fileInfo.id})">✏️ Redaktə</button>`;
+            }
+            
+            // Delete action
+            actions += `<button class="action-button danger" onclick="removeFile(${fileInfo.id})">🗑️ Sil</button>`;
+            
+            return actions;
+        }
+
+        // File operations
+        function previewFile(fileId) {
+            const file = uploadedFiles.find(f => f.id === fileId);
+            if (!file || !file.content) {
+                showNotification('Xəta', 'Fayl məzmunu əlçatan deyil', 'error');
+                return;
+            }
+
+            const modal = createModal();
+            const content = modal.querySelector('.modal-content');
+            
+            let displayContent = file.content;
+            if (file.name && file.name.toLowerCase().endsWith('.rmd')) {
+                displayContent = formatRmarkdownContent(file.content);
+            }
+            
+            content.innerHTML = `
+                <div class="modal-header">
+                    <h3>${getFileIcon(file.type)} ${file.title || file.name}</h3>
+                    <button onclick="closeModal()" class="close-btn">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="file-preview">${displayContent}</div>
+                    <div class="file-stats">
+                        <strong>📊 Fayl məlumatları:</strong><br>
+                        ${file.size ? `Ölçü: ${formatFileSize(file.size)} | ` : ''}
+                        Simvollar: ${file.content.length} | 
+                        Sətrlər: ${file.content.split('\n').length}
+                    </div>
+                </div>
+            `;
+        }
+
+        function editFile(fileId) {
+            const file = uploadedFiles.find(f => f.id === fileId);
+            if (!file) return;
+
+            const modal = createModal();
+            const content = modal.querySelector('.modal-content');
+            
+            content.innerHTML = `
+                <div class="modal-header">
+                    <h3>✏️ ${file.title || file.name} Redaktəsi</h3>
+                    <button onclick="closeModal()" class="close-btn">×</button>
+                </div>
+                <div class="modal-body">
+                    <div style="margin-bottom: 15px;">
+                        <label>Başlıq:</label>
+                        <input type="text" id="editTitle" value="${file.title || file.name}" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    </div>
+                    ${file.authors ? `
+                    <div style="margin-bottom: 15px;">
+                        <label>Müəlliflər:</label>
+                        <input type="text" id="editAuthors" value="${file.authors}" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    </div>` : ''}
+                    ${file.year ? `
+                    <div style="margin-bottom: 15px;">
+                        <label>Nəşr ili:</label>
+                        <input type="text" id="editYear" value="${file.year}" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    </div>` : ''}
+                    ${file.url ? `
+                    <div style="margin-bottom: 15px;">
+                        <label>URL:</label>
+                        <input type="url" id="editUrl" value="${file.url}" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    </div>` : ''}
+                    ${file.platform ? `
+                    <div style="margin-bottom: 15px;">
+                        <label>Platform:</label>
+                        <input type="text" id="editPlatform" value="${file.platform}" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;" readonly>
+                    </div>` : ''}
+                    <div style="margin-bottom: 15px;">
+                        <label>Təsvir:</label>
+                        <textarea id="editDescription" rows="4" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">${file.description || ''}</textarea>
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="action-button success" onclick="saveFileEdit(${fileId})">💾 Yadda Saxla</button>
+                        <button class="action-button" onclick="closeModal()">❌ Ləğv Et</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function saveFileEdit(fileId) {
+            const file = uploadedFiles.find(f => f.id === fileId);
+            if (!file) return;
+
+            file.title = document.getElementById('editTitle').value;
+            if (document.getElementById('editAuthors')) {
+                file.authors = document.getElementById('editAuthors').value;
+            }
+            if (document.getElementById('editYear')) {
+                file.year = document.getElementById('editYear').value;
+            }
+            if (document.getElementById('editUrl')) {
+                file.url = document.getElementById('editUrl').value;
+            }
+            if (document.getElementById('editPlatform')) {
+                file.platform = document.getElementById('editPlatform').value;
+            }
+            file.description = document.getElementById('editDescription').value;
+
+            closeModal();
+            filterFiles(currentFilter);
+            showNotification('Yeniləndi', 'Fayl məlumatları uğurla yeniləndi!', 'success');
+        }
+
+        function downloadFile(fileId) {
+            const file = uploadedFiles.find(f => f.id === fileId);
+            if (!file || !file.file) {
+                showNotification('Xəta', 'Fayl yüklənmə üçün əlçatan deyil', 'error');
+                return;
+            }
+
+            const url = URL.createObjectURL(file.file);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = file.name;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            showNotification('Yüklənir', `${file.name} yüklənməyə başladı`, 'success');
+        }
+
+        function removeFile(fileId) {
+            const file = uploadedFiles.find(f => f.id === fileId);
+            if (!file) return;
+
+            if (confirm(`"${file.title || file.name}" faylını silmək istədiyinizdən əminsiniz?`)) {
+                uploadedFiles = uploadedFiles.filter(f => f.id !== fileId);
+                filterFiles(currentFilter);
+                autoSaveData(); // Auto-backup after deletion
+                showNotification('Silindi', 'Fayl uğurla silindi', 'success');
+            }
+        }
+
+        // Utility functions
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        function formatRmarkdownContent(content) {
+            return content
+                .replace(/^---\n([\s\S]*?)\n---/m, '<div class="yaml-block"><strong>📋 YAML Metadata:</strong><pre>$1</pre></div>')
+                .replace(/```\{([^}]*)\}([\s\S]*?)```/g, '<div class="code-block r-code"><strong>💻 $1 Kod:</strong><pre>$2</pre></div>')
+                .replace(/```([^`]*?)```/g, '<div class="code-block"><strong>📄 Kod:</strong><pre>$1</pre></div>')
+                .replace(/^#{1,6}\s(.+)$/gm, '<h4 style="color: #1e3c72; margin: 15px 0;">$1</h4>')
+                .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+        }
+
+        function createModal() {
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                z-index: 2000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+            `;
+            
+            const content = document.createElement('div');
+            content.className = 'modal-content';
+            content.style.cssText = `
+                background: white;
+                border-radius: 15px;
+                max-width: 900px;
+                max-height: 85vh;
+                overflow-y: auto;
+                position: relative;
+                width: 90%;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            `;
+            
+            modal.appendChild(content);
+            document.body.appendChild(modal);
+            
+            // Close on background click
+            modal.onclick = (e) => {
+                if (e.target === modal) closeModal();
+            };
+            
+            return modal;
+        }
+
+        function closeModal() {
+            const modal = document.querySelector('.modal');
+            if (modal) {
+                modal.remove();
+            }
+        }
+
+        function showProgress() {
+            document.getElementById('uploadProgress').style.display = 'block';
+        }
+
+        function hideProgress() {
+            setTimeout(() => {
+                document.getElementById('uploadProgress').style.display = 'none';
+            }, 1000);
+        }
+
+        function updateProgress(percentage, text) {
+            document.getElementById('progressFill').style.width = percentage + '%';
+            document.getElementById('progressText').textContent = text;
+        }
+
+        // Original functions (kept for compatibility)
+        function handleTestUpload() {
+            showContent('research');
+            showNotification('Test Yükləmə Sistemi', 'Elmi yazılar bölməsinə yönləndirildiniz. Test materiallarınızı buradan yükləyə bilərsiniz.', 'info');
+        }
+
+        function viewTestBank(category) {
+            const categories = {
+                'math': 'Riyaziyyat Test Bankı açılır...',
+                'methodology': 'Testologiya Metodları bölməsi',
+                'statistics': 'Statistik Analiz Vasitələri'
+            };
+            showNotification('Test Bankı', categories[category], 'info');
+        }
+
+        function openResearch(type) {
+            const research = {
+                'testology': 'Testologiya Elmi: Müasir Perspektivlər',
+                'standards': 'Azərbaycan Təhsilində Riyaziyyat Standartları',
+                'r-analytics': 'R Dili ilə Təhsil Analitikası',
+                'psychometry': 'Psixometriya və Test Validasiyası'
+            };
+            showNotification('Elmi Əsər', `"${research[type]}" məqaləsi açılır...`, 'info');
+        }
+
+        function downloadResearch(type) {
+            showNotification('Yüklənir', 'Araşdırma materialı yüklənməyə başladı...', 'success');
+        }
+
+        function handleAppUpload() {
+            showContent('applications');
+            showNotification('Tətbiq Yükləmə Sistemi', 'GitHub, Shinyapps.io, ZIP və digər platformalar üçün tətbiq əlavə etmək sistemi hazırdır!', 'success');
+        }
+
+        function launchApp(appType) {
+            const appNames = {
+                'dashboard': 'Test Analizi Dashboard-u',
+                'performance': 'Tələbə Performans Monitoru',
+                'questionbank': 'Sual Bankı İdarəetməsi',
+                'reports': 'Avtomatik Hesabat Sistemi',
+                'psychometric': 'Psixometrik Analiz Vasitəsi',
+                'interactive': 'İnteraktiv Öyrədici Modullər'
+            };
+            showNotification('Tətbiq Açılır', `${appNames[appType]} hazırlanır...`, 'info');
+        }
+
+        // Notification system
+        function showNotification(title, message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #1e3c72, #74b9ff);
+                color: white;
+                padding: 20px 25px;
+                border-radius: 15px;
+                box-shadow: 0 15px 35px rgba(30, 60, 114, 0.3);
+                z-index: 3000;
+                max-width: 400px;
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                transform: translateX(500px);
+                transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            `;
+            
+            if (type === 'success') {
+                notification.style.background = 'linear-gradient(135deg, #00b894, #00cec9)';
+            } else if (type === 'error') {
+                notification.style.background = 'linear-gradient(135deg, #e17055, #e84393)';
+            }
+            
+            notification.innerHTML = `
+                <h4 style="margin: 0 0 10px 0; font-size: 1.1em; font-weight: 600;">${title}</h4>
+                <p style="margin: 0; font-size: 0.95em; opacity: 0.9; line-height: 1.5;">${message}</p>
+            `;
+
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+
+            setTimeout(() => {
+                notification.style.transform = 'translateX(500px)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 400);
+            }, 4000);
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Sayfa yüklendi - Elmi yazılar sistemi başladılır...');
+            
+            setupDragAndDrop();
+            
+            // Initialize empty displays
+            filterApps('all');
+            filterFiles('all');
+            
+            console.log('Elmi yazılar sistemi hazırdır!');
+            
+            // Add custom styles for better file preview
+            const style = document.createElement('style');
+            style.textContent = `
+                .modal-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 30px;
+                    border-bottom: 2px solid #eee;
+                    background: linear-gradient(135deg, #f8f9ff, #e8f4ff);
+                }
+                .modal-header h3 {
+                    margin: 0;
+                    color: #1e3c72;
+                    font-size: 1.3em;
+                }
+                .close-btn {
+                    background: #e74c3c;
+                    color: white;
+                    border: none;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .modal-body {
+                    padding: 30px;
+                }
+                .file-preview {
+                    background: #f8f9fa;
+                    padding: 20px;
+                    border-radius: 10px;
+                    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+                    font-size: 13px;
+                    line-height: 1.6;
+                    max-height: 400px;
+                    overflow-y: auto;
+                    white-space: pre-wrap;
+                    color: #2c3e50;
+                    margin-bottom: 20px;
+                }
+                .file-stats {
+                    background: #e8f4ff;
+                    padding: 15px;
+                    border-radius: 10px;
+                    color: #1e3c72;
+                }
+                .yaml-block {
+                    background: #fff3cd;
+                    padding: 15px;
+                    border-left: 4px solid #ffc107;
+                    margin: 10px 0;
+                    border-radius: 5px;
+                }
+                .code-block {
+                    background: #d4edda;
+                    padding: 15px;
+                    border-left: 4px solid #28a745;
+                    margin: 10px 0;
+                    border-radius: 5px;
+                }
+                .code-block.r-code {
+                    background: #f8d7da;
+                    border-left-color: #dc3545;
+                }
+                .yaml-block strong, .code-block strong {
+                    display: block;
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                }
+                .yaml-block pre, .code-block pre {
+                    margin: 0;
+                    background: rgba(0,0,0,0.05);
+                    padding: 10px;
+                    border-radius: 5px;
+                    overflow-x: auto;
+                }
+                .github-app, .repos-app, .shinyapps-app, .cloud-app, .zip-app, .manual-app,
+                .repos-file, .cloud-file {
+                    border-left-width: 6px;
+                }
+                .github-app, .github-file {
+                    border-left-color: #6c5ce7;
+                    background: linear-gradient(135deg, #f3f2ff 0%, #e8e6ff 100%);
+                }
+                .repos-app, .repos-file {
+                    border-left-color: #e17055;
+                    background: linear-gradient(135deg, #fef7f5 0%, #fdeee9 100%);
+                }
+                .shinyapps-app {
+                    border-left-color: #74b9ff;
+                    background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+                }
+                .cloud-app, .cloud-file {
+                    border-left-color: #00b894;
+                    background: linear-gradient(135deg, #f0fffe 0%, #e6fffc 100%);
+                }
+                .zip-app {
+                    border-left-color: #e17055;
+                    background: linear-gradient(135deg, #fef7f5 0%, #fdeee9 100%);
+                }
+                .manual-app {
+                    border-left-color: #6c5ce7;
+                    background: linear-gradient(135deg, #f3f2ff 0%, #e8e6ff 100%);
+                }
+            `;
+            document.head.appendChild(style);
+            
+            setTimeout(() => {
+                showNotification(
+                    'Backup Sistemi Aktiv!', 
+                    'Məlumatlarınızı itirmək istəmirsinizsə "💾 Backup Yarat" düyməsinə basın. GitHub-a yükləməzdən əvvəl mütləq backup yaradın!',
+                    'success'
+                );
+            }, 2000);
+
+            // Check if we need to show backup reminder
+            setTimeout(() => {
+                if (uploadedFiles.length === 0 && uploadedApps.length === 0) {
+                    showNotification(
+                        'İlk Dəfə İstifadə', 
+                        'Salam! Bu sistem sizin fayllarınızı və linklərini qeyd edir. Ancaq GitHub-a yükləyəndə məlumatlar itirilir. Məlumat əlavə etdikdən sonra "💾 Backup Yarat" ilə qoruyun!',
+                        'info'
+                    );
+                }
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
